@@ -5,7 +5,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Hello
         <OuterComponent />
       </div>
     );
@@ -13,3 +12,4 @@ class App extends React.Component {
 }
 
 export default App;
+  

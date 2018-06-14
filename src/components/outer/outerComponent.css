@@ -1,3 +1,5 @@
 .outer-component {
-    background-color: coral
+    background-color: coral;
+    margin-left: 0;
+    margin-right: 0;
 }
