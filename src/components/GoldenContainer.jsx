@@ -1,15 +1,16 @@
 import React from 'react';
 
+import GoldenRatioThreeCellLayout from './layouts/GoldenRatioThreeCellLayout'
 import './GoldenContainer.css'
 
-class Container extends React.Component {
+class GoldenContainer extends React.Component {
     render() {
         return <div className ='golden-container'>
           <div className="golden-frame">
-            3-Cell Component
+            <GoldenRatioThreeCellLayout />
           </div>
         </div>
     }
 }
 
-export default Container
+export default GoldenContainer
