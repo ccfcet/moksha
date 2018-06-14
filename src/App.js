@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
+
+import React from 'react';
+
+import Container from './components/Container.jsx'
+
 import './App.css';
-import OuterComponent from './components/outer/OuterComponent.jsx'
+
 class App extends React.Component {
   render() {
     return (
       <div>
-        <OuterComponent />
+        <Container />
       </div>
     );
   }
 }
 
 export default App;
-  
