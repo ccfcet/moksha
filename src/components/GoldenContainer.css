@@ -1,0 +1,14 @@
+.golden-container {
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template: 1fr 8fr 1fr / 1fr 8fr 1fr;
+    height: 100vh;
+}
+
+.golden-frame {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: coral;
+}
+
+
