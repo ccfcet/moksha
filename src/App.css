@@ -1,3 +1,79 @@
-body {
-  background-color: #363636;
+/* for ant design */
+@import '~antd/dist/antd.css';
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
+
+.App {
+  /* text-align: center; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #0039ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#container
+{
+  display: block;
+}
+
+#header
+{
+  text-align: center;
+}
+
+#header > h1#institute-name
+{
+  color: #f4f3ff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.6em;
+  font-weight: 200;
+  margin-top: -0.35em;
+  margin-bottom: 0em;
+}
+
+#header > h2#institute-name-sub
+{
+  color: #f4f3ff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.7em;
+  font-weight: 200;
+}
+
+#main-menu
+{
+  padding-top: 4em;
+}
+
+/* ant-menu override -- start */
+#main-menu > .ant-menu
+{
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#main-menu > .ant-menu-horizontal
+{
+  border-bottom: 1px solid transparent;
+}
+
+#main-menu > .ant-menu-horizontal > .ant-menu-item > a
+{
+  color: #ffffff;
+}
+
+#main-menu > .ant-menu-horizontal > .ant-menu-item:hover
+{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+#main-menu > .ant-menu-horizontal > .ant-menu-item:hover > a
+{
+  color: #ffffff;
+}
+/* ant-menu override -- end */
