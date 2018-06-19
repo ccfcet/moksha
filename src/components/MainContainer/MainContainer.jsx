@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Menu } from 'antd';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './main-container.css';
 
