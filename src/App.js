@@ -1,12 +1,17 @@
 import React from 'react';
 
 import { Menu } from 'antd';
+import { BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
+import About from './components/About.jsx'
 import './App.css';
 
 class App extends React.Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
         <div id="container">
           <div id="header">
@@ -19,7 +24,7 @@ class App extends React.Component {
               selectable={ false }
               >
                 <Menu.Item>
-                  About
+                  <Link to="/about">About</Link>
                 </Menu.Item>
                 <Menu.Item>
                   Administration
@@ -42,7 +47,9 @@ class App extends React.Component {
               </Menu>
             </div>
           </div>
+          <Route path="/about" component={About} />
         </div>
+        </BrowserRouter>
       );
     }
   }
