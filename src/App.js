@@ -3,7 +3,7 @@ import { BrowserRouter, Route} from 'react-router-dom'
 
 import MainContainer from './components/MainContainer/MainContainer.jsx'
 import About from './components/About.jsx'
-import Academics from './components/Academics.jsx'
+import Academics from './components/Academics/Academics.jsx'
 import Activities from './components/Activities.jsx'
 import Administration from './components/Administration.jsx'
 import Facilities from './components/Facilities.jsx'
