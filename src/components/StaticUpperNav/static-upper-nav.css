@@ -9,6 +9,7 @@
 #settings-icon {
     float: right;
     display: inline;
+    color:black;
 }
 
 #institution-name {
@@ -16,6 +17,6 @@
 }
 
 .ant-menu .ant-menu-item {
-    line-height: 9vh;    /* padding: 0px; */
+    line-height: 4vh;    /* padding: 0px; */
     font-size: 1.3em;
 }
