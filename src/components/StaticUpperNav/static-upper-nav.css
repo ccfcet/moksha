@@ -10,3 +10,12 @@
     float: right;
     display: inline;
 }
+
+#institution-name {
+    display: inline;
+}
+
+.ant-menu .ant-menu-item {
+    line-height: 9vh;    /* padding: 0px; */
+    font-size: 1.3em;
+}

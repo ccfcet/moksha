@@ -6,13 +6,13 @@ import './static-upper-nav.css'
 class StaticUpperNav extends React.Component {
     render() {
         return <div id="static-upper-nav">
-            <Menu mode="horizontal">
-            <div> 
-                <InstitutionName />
-            </div> 
-            <div id="settings-icon"> 
+            <Menu mode="horizontal" id="static-upper-nav-menu">
+            <Menu.Item> 
+                <InstitutionName id="institution-name"/>
+            </Menu.Item> 
+            <Menu.Item id="settings-icon"> 
                 Settings
-            </div>    
+            </Menu.Item>    
             </Menu>            
         </div>
     }
