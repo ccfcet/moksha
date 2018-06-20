@@ -1,0 +1,15 @@
+#name #place {
+    height: 1vh;
+    margin: 0 auto;
+    padding: 2pxpx;
+    width: 144px;
+    /* font-size: 1.3em;
+    font-family: 'Raleway', sans-serif; */
+}
+#name-ol{
+height: 5vh;
+}
+
+#place-ol {
+    height: 12vh;
+}

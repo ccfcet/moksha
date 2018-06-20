@@ -8,7 +8,7 @@ import './main-container.css';
 class MainContainer extends React.Component {
   render() {
     return (
-      <div className="MainContainer">
+      <div className="main-container">
         <div id="container">
           <div id="header">
             <h1 id="institute-name">College of Engineering</h1>

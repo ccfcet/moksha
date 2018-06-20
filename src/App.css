@@ -1,0 +1,14 @@
+@import '~antd/dist/antd.css';
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
+
+.App {
+  /* text-align: center; */
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 100%, 27.6%);
+  /* background-color: #0039ff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
