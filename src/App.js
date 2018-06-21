@@ -7,6 +7,7 @@ import Academics from './components/Academics/Academics.jsx'
 import Activities from './components/Activities.jsx'
 import Administration from './components/Administration.jsx'
 import Facilities from './components/Facilities.jsx'
+import Drawer from './components/Drawer/Drawer.jsx'
 import More from './components/More.jsx'
 import './App.css';
 
@@ -21,7 +22,8 @@ class App extends React.Component {
         <Route path="/activities" component={Activities} />          
         <Route path="/administration" component={Administration} />          
         <Route path="/facilities" component={Facilities} />          
-        <Route path="/more" component={More} />          
+        <Route path="/more" component={More} />
+        <Route path="/drawer" component={Drawer} />          
         </div>
       </BrowserRouter>
     );
