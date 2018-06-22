@@ -11,7 +11,7 @@ class StaticUpperNav extends React.Component {
                 <InstitutionName id="institution-name"/>
             </Menu.Item> 
             <Menu.Item id="settings-icon"> 
-                Settings
+                V
             </Menu.Item>    
             </Menu>            
         </div>
