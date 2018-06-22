@@ -1,0 +1,13 @@
+.drawer-container {
+  display: inline-block;
+  transform: scale(1.25);
+}
+.drawer-container-enter {
+    opacity:0.01;
+    transform: translateY(-100%) scale(0.75);
+}
+ .drawer-container-enter-active {
+    opacity: 1;
+    transform: translateY(0%) scale(1.25);
+    transition: all 1000ms ease-out;
+}

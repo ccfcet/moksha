@@ -1,0 +1,8 @@
+
+.drawer {
+    height: 70%;
+    width: 40%;
+    position: relative;
+    background-color: aquamarine;
+    border: 1px black thin solid;
+}

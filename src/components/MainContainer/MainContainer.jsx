@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import { Collapse } from 'antd';
+// import { Collapse } from 'antd';
 
 import './main-container.css';
 
