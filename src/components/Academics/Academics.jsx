@@ -5,13 +5,14 @@ import StaticUpperNav from '../StaticUpperNav/StaticUpperNav.jsx';
 import {Card,Col,Row} from 'antd';
 
 import { Link } from 'react-router-dom';
-
+ import './academics.css'
 class Academics extends React.Component {
     render() {
         return(
-          <div>
+          <div className='academics'>
           <StaticUpperNav />
-    	<Row gutter={8}>
+          <div>
+    	<Row gutter={8} >
       	<Col span={8}>
         <Card title="Computer Science" bordered={false}><Link to="/">More Info</Link></Card>
       	</Col>
@@ -46,6 +47,7 @@ class Academics extends React.Component {
         <Card title="Physical Education" bordered={false}><Link to="/">More Info</Link></Card>
       </Col>
     </Row>
+    </div>
   </div>
   );
     }
