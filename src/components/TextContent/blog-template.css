@@ -1,0 +1,16 @@
+.blog-template {
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    font-size: 1.2em;
+}
+.mission-statement {
+    font-size: 1.3em;
+}
+
+.vision-statement {
+    font-size: 1.3em;
+}
