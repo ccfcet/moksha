@@ -1,9 +1,9 @@
-.Activities-link{
-	color:white;
-}
-.Activities-link:hover{
-	color:#cc7061;
-}
-.Activities{
-	color:white;
+
+.main{
+	 align-items: center;
+    justify-content: center;
+    display: flex;
+    /*text-align: center;*/
+    width: 100%;
+    height: 100%;
 }
