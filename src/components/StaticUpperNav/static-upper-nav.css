@@ -10,7 +10,8 @@
 #settings-icon {
     float: right;
     display: inline;
-    color:black;
+    color: #ffffff;
+    margin-right: 2vw;
 }
 
 #institution-name {
@@ -21,5 +22,8 @@
     line-height: 4vh;
     font-size: 1.3em;
     font-family: Raleway, Medium;
+    background-color: #0039ff;
+    color: #ffffff;
+    min-height: 50px;
 }
 

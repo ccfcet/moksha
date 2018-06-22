@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 
-import StaticUpperNav from './StaticUpperNav/StaticUpperNav'
-import BlogTemplate from './TextContent/BlogTemplate'
+import StaticUpperNav from '../StaticUpperNav/StaticUpperNav'
+import BlogTemplate from '../TextContent/BlogTemplate'
 import './about.css'
 
 class About extends React.Component {

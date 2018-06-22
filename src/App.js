@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 // import { CSSTransition } from 'react-transition-group';
 
 import MainContainer from './components/MainContainer/MainContainer.jsx'
-import About from './components/About.jsx'
+import About from './components/About/About.jsx'
 import Academics from './components/Academics/Academics.jsx'
 import Activities from './components/Activities/Activities.jsx'
 import Administration from './components/Administration.jsx'
