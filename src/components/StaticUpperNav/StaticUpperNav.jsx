@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Menu } from 'antd';
 import {Link} from 'react-router-dom';
-import Drawer from '../Drawer/Drawer.jsx';
-import '../Drawer/Drawer.css';
-import {SlideDown} from 'react-slidedown'
+// import Drawer from '../Drawer/Drawer.jsx';
+// import '../Drawer/Drawer.css';
+// import { CSSTransition } from 'react-transition-group';
 
 import InstitutionName from './InstitutionName'
 import './static-upper-nav.css'
@@ -18,7 +18,6 @@ class StaticUpperNav extends React.Component {
             <Link to="/drawer">
             <Menu.Item id="settings-icon">
                 V
-
             </Menu.Item>
             </Link>    
             </Menu>            
