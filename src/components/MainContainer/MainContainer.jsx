@@ -2,18 +2,25 @@ import React from 'react';
 
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
+import { Collapse } from 'antd';
 
 import './main-container.css';
 
+
 class MainContainer extends React.Component {
+
   render() {
     return (
+
       <div className="main-container">
         <div id="container">
           <div id="header">
             <h1 id="institute-name">College of Engineering</h1>
             <h2 id="institute-name-sub">Trivandrum</h2>
+
           </div>
+
+
           <div id="main-menu">
             <Menu
               mode="horizontal"
