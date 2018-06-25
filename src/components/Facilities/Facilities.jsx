@@ -2,7 +2,7 @@ import React from 'react';
 
 import StaticUpperNav from '../StaticUpperNav/StaticUpperNav'
 import {Card} from 'antd';
-import {Row,Col,Icon} from 'antd';
+import {Row,Col} from 'antd';
 import './Facilities.css';
 
 
