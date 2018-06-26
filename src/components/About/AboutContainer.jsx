@@ -13,7 +13,6 @@ import Contact from './Contact.jsx'
 import './about-container.css'
 class AboutContainer extends React.Component {
     render() {
-        return <div>
             return <div>
                 <div>
                     <Row>
@@ -45,7 +44,7 @@ class AboutContainer extends React.Component {
                     <Route path="/about/history" component={History} />
                 </div>
             </BrowserRouter> */}
-        </div>
+        
     }
 }
 

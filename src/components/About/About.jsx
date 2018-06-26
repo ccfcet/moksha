@@ -5,9 +5,8 @@ import './about.css'
 
 class About extends React.Component {
     render() {
-        return <Card>
-            <BlogTemplate />
-        </Card>
+        return <BlogTemplate />
+       
     }
 }
 

@@ -3,6 +3,7 @@ import React from 'react';
 import StaticUpperNav from '../StaticUpperNav/StaticUpperNav'
 import { Card } from 'antd';
 import { Row, Col } from 'antd';
+import {Link} from 'react-router-dom';
 import './Facilities.css';
 
 
@@ -15,18 +16,18 @@ class Facilities extends React.Component {
                     <Row gutter={16}>
                         <Col span={8}>
                             <Card >
-                                <h1 className="card-height">Bosch Rexorth</h1>
+                                <h1 className="card-height"><Link to="/"> Bosch Rexorth </Link></h1>
                             </Card >
                         </Col>
                         <Col span={8}>
                             <Card >
-                                <h1 className="card-height">Hostel</h1>
+                                <h1 className="card-height"><Link to="/">Hostel</Link></h1>
 
                             </Card>
                         </Col>
                         <Col span={8}>
                             <Card >
-                                <h1 className="card-height">Placements(CGPU)</h1>
+                                <h1 className="card-height"><Link to="/">Placements(CGPU)</Link></h1>
 
                             </Card>
                         </Col>
@@ -35,19 +36,19 @@ class Facilities extends React.Component {
                     <Row gutter={16}>
                         <Col span={8}>
                             <Card>
-                                <h1 className="card-height">Central Computing Facility</h1>
+                                <h1 className="card-height"><Link to="/">Central Computing Facility</Link></h1>
 
                             </Card>
                         </Col>
                         <Col span={8}>
                             <Card >
-                                <h1 className="card-height">Centre For Continuing Education</h1>
+                                <h1 className="card-height"><Link to="/">Centre For Continuing Education</Link></h1>
 
                             </Card>
                         </Col>
                         <Col span={8}>
                             <Card>
-                                <h1 className="card-height">Refri. & AC Maintenance Unit</h1>
+                                <h1 className="card-height"><Link to="/">Refri. & AC Maintenance Unit</Link></h1>
 
                             </Card>
                         </Col>
@@ -56,19 +57,19 @@ class Facilities extends React.Component {
                     <Row gutter={16}>
                         <Col span={8}>
                             <Card>
-                                <h1 className="card-height">Guest House</h1>
+                                <h1 className="card-height"><Link to="/">Guest House</Link></h1>
 
                             </Card>
                         </Col>
                         <Col span={8}>
                             <Card>
-                                <h1 className="card-height">Technical Library</h1>
+                                <h1 className="card-height"><Link to="/">Technical Library</Link></h1>
 
                             </Card>
                         </Col>
                         <Col span={8}>
                             <Card>
-                                <h1 className="card-height">Research Programmes</h1>
+                                <h1 className="card-height"><Link to="/">Research Programmes</Link></h1>
 
                             </Card>
                         </Col>

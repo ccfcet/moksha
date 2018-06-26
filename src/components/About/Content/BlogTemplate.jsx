@@ -33,7 +33,7 @@ class BlogTemplate extends React.Component {
                                     in the late fifties, the College administration came
                                     under the control of the Government of Kerala. The
                                     College was shifted to the present sprawling
-                                    125 acres in 1960.
+                                    125 acres in 1980.
                             </p>
                             </Col>
                     </Row>
@@ -58,25 +58,19 @@ class BlogTemplate extends React.Component {
                         </Row>
                     </div>
                     <div>
-                        <Row gutter={8}>
+                        <Row gutter={16}>
                             <h1>More</h1>
-                            <Col span={6}>
+                            <Col span={8}>
                                 <Card  className="link-card">
                                     <h1><Link to="/about/history"> CET at a glance</Link></h1>
                                 </Card>
                             </Col>
-                            <Col span={6}>
+                            <Col span={8}>
                                 <Card  className="link-card">
                                     <h1><Link to="/about/accreditation">Accreditation </Link></h1>
                                 </Card>
                             </Col>
-                            <Col span={6}>
-                                <Card  className="link-card">
-                                    <h1><Link to="/about">Mission and Vision</Link></h1>
-                                    {/* <h1>Mission and Vision</h1> */}
-                                </Card>
-                            </Col>
-                            <Col span={6}>
+                            <Col span={8}>
                                 <Card  className="link-card">
                                     <h1><Link to="/about/contact">Contact Us</Link></h1>
                                     {/* <h1>Contact Us</h1> */}

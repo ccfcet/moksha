@@ -49,7 +49,7 @@ class Academics extends React.Component {
               </Col>
             </Row>
           </div>
-        </Card>
+          </Card>
       </div>
     );
   }

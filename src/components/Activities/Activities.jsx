@@ -9,10 +9,10 @@ class Activities extends React.Component {
     render() {
         return <div className="main">
             <StaticUpperNav />
-            <Card>
-                <div>
+            <Card >
+                <div >
                     <h1>Activities</h1>
-                    <Row gutter={8}>
+                    <Row gutter={16}>
                         <Col span={8}>
                             <h2><Link to="/">IEEE</Link></h2>
                         </Col>
@@ -23,7 +23,7 @@ class Activities extends React.Component {
                             <h2><Link to="/">ENCRESE</Link></h2>
                         </Col>
                     </Row>
-                    <Row gutter={8}>
+                    <Row gutter={16}>
                         <Col span={8}>
                             <h2><Link to="/">BAJA</Link></h2>
                         </Col>
@@ -34,7 +34,7 @@ class Activities extends React.Component {
                             <h2><Link to="/">ISNT</Link></h2>
                         </Col>
                     </Row>
-                    <Row gutter={8}>
+                    <Row gutter={16}>
                         <Col span={8}>
                             <h2><Link to="/">Environmental Club</Link></h2>
                         </Col>
@@ -45,7 +45,7 @@ class Activities extends React.Component {
                             <h2><Link to="/">EGRC-CET</Link></h2>
                         </Col>
                     </Row>
-                    <Row gutter={8}>
+                    <Row gutter={16}>
                         <Col span={8}>
                             <h2><Link to="/">Industry Institute Partnership Cell</Link></h2>
                         </Col>
@@ -56,7 +56,7 @@ class Activities extends React.Component {
                             <h2><Link to="/">Parent Teacher Association</Link></h2>
                         </Col>
                     </Row>
-                    <Row gutter={8}>
+                    <Row gutter={16}>
                         <Col span={8}>
                             <h2><Link to="/">Entrepreneurship Development</Link></h2>
                         </Col>
