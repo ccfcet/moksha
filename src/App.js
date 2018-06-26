@@ -25,7 +25,7 @@ class App extends React.Component {
           <Route path="/administration" component={Administration} />
           <Route path="/facilities" component={Facilities} />
           <Route path="/more" component={More} />
-          <Route path="/drawer" component={Drawer} />
+          {/* <Route path="/drawer" component={Drawer} /> */}
         </div>
       </BrowserRouter>
     );
