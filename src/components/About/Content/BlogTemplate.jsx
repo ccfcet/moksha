@@ -4,15 +4,17 @@ import { Row, Col, Card } from 'antd';
 import { Link } from 'react-router-dom'
 
 import './text-content.css'
+
 class BlogTemplate extends React.Component {
     render() {
-        return <div className="text-content">
+        return <Card className="text-content">
                 <div>
                     <Row>
+                      <Col span={24}>
                         <div className="title">
-                            <Col span={24}>
                                 <h1>About CET</h1>
-                                <p>
+                              </div>
+                                <p style={{fontSize: "1.3em"}}>
                                     The College of Engineering, Trivandrum was established
                                     in 1939 as the first Engineering College in the then
                                     Travancore State. The first classes were started on 3rd
@@ -34,7 +36,6 @@ class BlogTemplate extends React.Component {
                                     125 acres in 1960.
                             </p>
                             </Col>
-                        </div>
                     </Row>
                     <div>
                         <Row type="flex" justify="center">
@@ -84,7 +85,7 @@ class BlogTemplate extends React.Component {
                         </Row>
                     </div>
                 </div>
-        </div>
+        </Card>
     }
 }
 
