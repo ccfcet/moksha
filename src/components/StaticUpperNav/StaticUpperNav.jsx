@@ -12,15 +12,15 @@ class StaticUpperNav extends React.Component {
     render() {
         return <div id="static-upper-nav">
             <Menu mode="horizontal" id="static-upper-nav-menu">
-            <Menu.Item> 
+            <Menu.Item>
                 <InstitutionName id="institution-name"/>
             </Menu.Item>
-            <Link to="/drawer">
+            {/* <Link to="/drawer">
             <Menu.Item id="settings-icon">
                 V
             </Menu.Item>
-            </Link>    
-            </Menu>            
+            </Link>     */}
+            </Menu>
         </div>
     }
 }

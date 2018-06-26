@@ -1,16 +1,27 @@
 /* #name #place {
-    height: 1vh;
-    margin: 0 auto;
-    padding: 2px;
-    width: auto;
-    font-size: 1.3em;
-    font-family: 'Raleway', sans-serif;
+height: 1vh;
+margin: 0 auto;
+padding: 2px;
+width: auto;
+font-size: 1.3em;
+font-family: 'Raleway', sans-serif;
 
 } */
 #name {
-    font-family: Raleway, Extra Bold;
-    color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #ffffff;
 }
+
 #place {
-    color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.0em;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#static-upper-nav > .ant-menu-horizontal > .ant-menu-item:hover
+{
+  border-bottom: 2px solid transparent;
 }

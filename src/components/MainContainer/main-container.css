@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
 
 #container
 {
@@ -74,6 +74,60 @@
   /* background-color: #0039ff; */
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+  #header
+  {
+    padding-top: 50px;
+  }
+
+  #main-menu
+  {
+    padding-top: 2em;
+  }
+
+  #header > h1#institute-name
+  {
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+
+  #header > h2#institute-name-sub
+  {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+
+  #main-menu > .ant-menu
+  {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  #main-menu > .ant-menu-horizontal > .ant-menu-item
+  {
+    display: block;
+    float: none;
+    padding-left: 0;
+  }
+
+  #main-menu > .ant-menu-horizontal > .ant-menu-item:hover
+  {
+    border-bottom: 2px solid #0039ff;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+}
+
 /* iPhone 6 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px)
 and (orientation : landscape) and (min-resolution: 192dpi){
@@ -144,7 +198,7 @@ and (orientation : portrait) and (min-resolution: 192dpi) {
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px)
 and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px)
@@ -183,7 +237,7 @@ and (orientation : portrait) and (min-resolution: 192dpi) {
 /* Apple iPhone SE ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px)
 and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px)
@@ -227,7 +281,7 @@ and (orientation : portrait) and (min-resolution: 192dpi) {
 /* Blackberry Z30 */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px)
 and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px)
@@ -271,7 +325,7 @@ and (orientation : portrait) and (min-resolution: 192dpi) {
 /* Google Nexus 6 */
 @media only screen and (min-device-width: 412px) and (max-device-height: 732px)
 and (orientation : landscape) and (min-resolution: 336dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 412px) and (max-device-height: 732px)
@@ -315,7 +369,7 @@ and (orientation : portrait) and (min-resolution: 336dpi) {
 /* Google Nexus S */
 @media only screen and (min-device-width: 320px) and (max-device-height: 533px)
 and (orientation : landscape) and (min-resolution: 144dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 533px)
@@ -357,10 +411,10 @@ and (orientation : portrait) and (min-resolution: 144dpi) {
 }
 
 /* LG G Watch */
-@media only screen and (min-device-width: 280px) and (max-device-height: 533px)
-and (min-resolution: 96dpi){
+@media only screen and (min-device-width: 280px) and (min-device-height: 533px)
+and (max-device-height: 533px) and (min-resolution: 96dpi){
   #main-menu {
-      padding-top: 1em;
+    padding-top: 1em;
   }
 
   #header
@@ -402,7 +456,7 @@ and (min-resolution: 96dpi){
 /* LG Optimus L70 */
 @media only screen and (min-device-width: 384px) and (max-device-height: 640px)
 and (orientation : landscape) and (min-resolution: 120dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 384px) and (max-device-height: 640px)
@@ -446,7 +500,7 @@ and (orientation : portrait) and (min-resolution: 120dpi) {
 /* Nokia Lumia 520 */
 @media only screen and (min-device-width: 320px) and (max-device-height: 533px)
 and (orientation : landscape) and (min-resolution: 134.4dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 533px)
@@ -490,7 +544,7 @@ and (orientation : portrait) and (min-resolution: 134.4dpi) {
 /* Nokia N9 */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px)
 and (orientation : landscape) and (min-resolution: 96dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px)
@@ -534,7 +588,7 @@ and (orientation : portrait) and (min-resolution: 96dpi) {
 /* Samsung Galaxy S8 */
 @media only screen and (min-device-width: 360px) and (max-device-height: 740px)
 and (orientation : landscape) and (min-resolution: 384dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 740px)
@@ -578,7 +632,7 @@ and (orientation : portrait) and (min-resolution: 384dpi) {
 /* Tesla Model S */
 @media only screen and (min-device-width: 1200px) and (max-device-height: 1920px)
 and (orientation : landscape) and (min-resolution: 96dpi){
-/* Styles */
+  /* Styles */
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-height: 1920px)

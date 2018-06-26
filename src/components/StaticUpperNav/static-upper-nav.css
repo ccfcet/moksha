@@ -19,7 +19,9 @@
 }
 
 #static-upper-nav-menu {
-    line-height: 4vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
     font-size: 1.3em;
     font-family: Raleway, Medium;
     background-color: #0039ff;
@@ -27,3 +29,7 @@
     min-height: 50px;
 }
 
+#static-upper-nav > .ant-menu-horizontal
+{
+  border-bottom: none;
+}
