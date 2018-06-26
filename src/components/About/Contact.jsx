@@ -1,11 +1,11 @@
 import React from 'react'
-// import Content from './HistoryContent/HistoryContent'
+import { Card } from 'antd'
 import ContactContent from './Content/ContactContent';
 class Contact extends React.Component {
     render() {
-        return <div>
+        return <Card>
             <ContactContent />
-        </div>
+        </Card>
     }
 }
 
