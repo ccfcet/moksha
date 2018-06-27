@@ -40,7 +40,7 @@ class BlogTemplate extends React.Component {
         <div>
           <Row type="flex" justify="center">
             <Col span={12}>
-              <Card>
+              <Card  bordered={false}>
                 <h1>Mission</h1>
                 <p className="mission-statement">
                   To facilitate Quality Engineering Education to Equip and
@@ -51,7 +51,7 @@ class BlogTemplate extends React.Component {
               </Card>
               </Col>
               <Col span={12}>
-              <Card>
+              <Card bordered={false}>
                 <h1>Vision</h1>
                 <p className="vision-statement">
                   National Level Excellence and International Visibility

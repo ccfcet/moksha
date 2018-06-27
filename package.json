@@ -15,9 +15,9 @@
     "react-transition-group": "^2.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "PORT=8000 react-scripts start",
+    "build": "PORT=8000 react-scripts build",
+    "test": "PORT=8000 react-scripts test --env=jsdom",
+    "eject": "PORT=8000 react-scripts eject"
   }
 }

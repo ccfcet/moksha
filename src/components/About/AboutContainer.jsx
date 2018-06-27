@@ -27,24 +27,13 @@ class AboutContainer extends React.Component {
                                     <Route exact path="/about" component={About} />
                                     <Route path="/about/history" component={History} />
                                     <Route path="/about/accreditation" component={Accreditation} />
-                                    {/* <Route path="/about/statements" component={Statements} /> */}
                                     <Route path="/about/contact" component={Contact} />
                                 </div>
                             </BrowserRouter>
                         </Col>
                     </Row>
                 </div>
-            </div>
-            {/* }
-
-
-            <BrowserRouter>
-                <div>
-                    <Route exact path="/about" component={About} />
-                    <Route path="/about/history" component={History} />
-                </div>
-            </BrowserRouter> */}
-        
+            </div>        
     }
 }
 
