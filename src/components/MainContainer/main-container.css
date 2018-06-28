@@ -77,7 +77,7 @@
   /* Styles */
   #header
   {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   #main-menu
@@ -93,7 +93,7 @@
 
   #header > h2#institute-name-sub
   {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 300;
   }
 
@@ -409,8 +409,9 @@ and (orientation : portrait) and (min-resolution: 144dpi) {
 }
 
 /* LG G Watch */
-@media only screen and (min-device-width: 280px) and (min-device-height: 533px)
-and (max-device-height: 533px) and (min-resolution: 96dpi){
+@media only screen and (min-device-width: 280px) and (max-device-width: 280px)
+and (min-device-height: 280px) and (max-device-height: 280px)
+and (min-resolution: 96dpi){
   #main-menu {
     padding-top: 1em;
   }

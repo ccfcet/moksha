@@ -14,20 +14,54 @@ import More from './components/More/More.jsx'
 import './App.css';
 
 class App extends React.Component {
+  constructor() {
+  super();
+  this.state = {
+    width: window.innerWidth,
+  };
+}
+
+componentWillMount() {
+  window.addEventListener('resize', this.handleWindowSizeChange);
+}
+
+// make sure to remove the listener
+// when the component is not mounted anymore
+componentWillUnmount() {
+  window.removeEventListener('resize', this.handleWindowSizeChange);
+}
+
+handleWindowSizeChange = () => {
+  this.setState({ width: window.innerWidth });
+};
+
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 500;
+
+    if(!isMobile)
+    {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Route exact path="/" component={MainContainer} />
-          <Route path="/about" component={AboutContainer} />
-          <Route path="/academics" component={Academics} />
-          <Route path="/activities" component={Activities} />
-          <Route path="/administration" component={Administration} />
-          <Route path="/facilities" component={MainContainer} />
-          <Route path="/more" component={MainContainer} />
-        </div>
-      </BrowserRouter>
-    );
+        <BrowserRouter>
+          <div className="App">
+            <Route exact path="/" component={MainContainer} />
+            <Route path="/about" component={AboutContainer} />
+            <Route path="/academics" component={Academics} />
+            <Route path="/activities" component={Activities} />
+            <Route path="/administration" component={Administration} />
+            <Route path="/facilities" component={MainContainer} />
+            <Route path="/more" component={MainContainer} />
+          </div>
+        </BrowserRouter>
+      );
+      }
+      else {
+        return (
+          <div>
+            <h1>Coming soon.</h1>
+          </div>
+        );
+      }
   }
 }
 

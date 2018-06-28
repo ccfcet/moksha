@@ -6,7 +6,7 @@
 }
 
 .text-content p {
-    font-family: 'open-sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
 }
 
@@ -22,7 +22,7 @@
 
 .mission-statement > .ant-card-bordered {
     border: none;
-}   
+}
 
 .vision-statement {
     font-size: 1.3em;
