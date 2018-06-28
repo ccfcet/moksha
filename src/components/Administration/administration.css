@@ -1,0 +1,31 @@
+.admin-content {
+    margin-top: 85px;
+    padding: 2vh 2vw 2vh 2vw;
+    width: 99.1vw;
+    /* border-radius: 10px; */
+
+}
+.ant-card.admin-card.ant-card-bordered.ant-card-wider-padding {
+    border-radius: 10px;
+}
+
+.title {
+    font-family: 'Raleway', san-serif;
+    font-size: 1.3em;
+}
+ 
+.link-card-row-container {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.ant-spin-container .ant-list-item.admin-list-item{
+    border-bottom-width: 0px;
+}
+
+.ant-spin-container .ant-list-item-content.ant-list-item-content-single {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+
+/* .ant-spin-container .ant-list-item-content.ant-list-item-content-single  */

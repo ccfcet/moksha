@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StaticUpperNav from './StaticUpperNav/StaticUpperNav'
+import StaticUpperNav from '../StaticUpperNav/StaticUpperNav'
 
 class More extends React.Component {
     render() {

@@ -6,9 +6,9 @@ import MainContainer from './components/MainContainer/MainContainer.jsx'
 import AboutContainer from './components/About/AboutContainer.jsx'
 import Academics from './components/Academics/Academics.jsx'
 import Activities from './components/Activities/Activities.jsx'
-import Administration from './components/Administration.jsx'
+import Administration from './components/Administration/Administration.jsx'
 import Facilities from './components/Facilities/Facilities.jsx'
-import More from './components/More.jsx'
+import More from './components/More/More.jsx'
 // import Drawer from './components/Drawer/DrawerContainer.jsx'
 
 import './App.css';
