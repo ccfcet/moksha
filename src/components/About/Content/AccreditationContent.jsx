@@ -48,11 +48,11 @@ class AccreditationContent extends React.Component {
                 title: 'Name of programme',
                 dataIndex: 'name',
                 key: 'name',
-            },{
+            }, {
                 title: 'Accreditation status',
                 dataIndex: 'status',
                 key: 'status',
-            },{
+            }, {
                 title: 'Period of validity',
                 dataIndex: 'validity',
                 key: 'validity',
