@@ -1,11 +1,12 @@
 import React from 'react'
-import { Card } from 'antd'
+
 import ContactContent from './Content/ContactContent';
+
 class Contact extends React.Component {
     render() {
-        return <Card>
+        return <div>
             <ContactContent />
-        </Card>
+        </div>
     }
 }
 

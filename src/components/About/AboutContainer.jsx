@@ -13,27 +13,27 @@ import Contact from './Contact.jsx'
 import './about-container.css'
 class AboutContainer extends React.Component {
     render() {
-            return <div>
-                <div>
-                    <Row>
-                        <Col span={24}>
-                            <StaticUpperNav />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col span={24}>
-                            <BrowserRouter>
-                                <div className="content"> 
-                                    <Route exact path="/about" component={About} />
-                                    <Route path="/about/history" component={History} />
-                                    <Route path="/about/accreditation" component={Accreditation} />
-                                    <Route path="/about/contact" component={Contact} />
-                                </div>
-                            </BrowserRouter>
-                        </Col>
-                    </Row>
-                </div>
-            </div>        
+        return <div>
+            <div id="outermost-container">
+                <Row>
+                    <Col span={24}>
+                        <StaticUpperNav />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span={24}>
+                        <BrowserRouter>
+                            <div className="content">
+                                <Route exact path="/about" component={About} />
+                                <Route path="/about/history" component={History} />
+                                <Route path="/about/accreditation" component={Accreditation} />
+                                <Route path="/about/contact" component={Contact} />
+                            </div>
+                        </BrowserRouter>
+                    </Col>
+                </Row>
+            </div>
+        </div>
     }
 }
 

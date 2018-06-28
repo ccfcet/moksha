@@ -1,4 +1,9 @@
 .content {
-    margin-top: 15vh;;
+    margin-top: 108px;
     padding: 2vh 2vw 2vh 2vw;
+}
+
+.outermost-container {
+    margin-top: 14px;
+    overflow: hidden;
 }

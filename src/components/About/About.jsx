@@ -1,11 +1,15 @@
 import React from 'react';
-import { Card } from 'antd'
-import BlogTemplate from './Content/BlogTemplate'
+import axios from 'axios';
+
+import AboutMainContent from './Content/AboutMainContent'
 import './about.css'
 
 class About extends React.Component {
+    state = {
+        
+    }
     render() {
-        return <BlogTemplate />
+        return <AboutMainContent />
        
     }
 }

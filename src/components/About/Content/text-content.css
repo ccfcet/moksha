@@ -8,6 +8,8 @@
     font-family: 'open-sans';
     font-size: 1.3em;
 }
+
+/* .text.content >  */
 .ant-card.text-content.ant-card-bordered.ant-card-wider-padding {
     border-radius: 10px;
 }

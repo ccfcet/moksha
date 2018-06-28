@@ -1,11 +1,10 @@
 import React from 'react';
 import { Row, Col, Card } from 'antd';
-// import { Carousel } from 'antd';
 import { Link } from 'react-router-dom'
 
 import './text-content.css'
 
-class BlogTemplate extends React.Component {
+class AboutMainContainer extends React.Component {
   render() {
     return <Card className="text-content">
       <div>
@@ -77,7 +76,6 @@ class BlogTemplate extends React.Component {
             <Col span={8}>
               <Card className="link-card">
                 <h1><Link to="/about/contact">Contact Us</Link></h1>
-                {/* <h1>Contact Us</h1> */}
               </Card>
             </Col>
           </Row>
@@ -87,4 +85,4 @@ class BlogTemplate extends React.Component {
   }
 }
 
-export default BlogTemplate;
+export default AboutMainContainer;

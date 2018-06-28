@@ -1,10 +1,10 @@
 import React from 'react'
-import { Row, Col } from 'antd'
-
+import { Card, Row, Col } from 'antd'
+import './text-content.css'
 class HistoryContent extends React.Component {
     render() {
         return <div>
-            <div className="text-content">
+            <Card className="text-content">
                 <Row>
                     <div className="title">
                         <Col span={24}>
@@ -49,7 +49,7 @@ class HistoryContent extends React.Component {
                         </Col>
                     </div>
                 </Row>
-            </div>
+            </Card>
 
         </div>
     }

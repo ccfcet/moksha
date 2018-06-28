@@ -5,6 +5,7 @@
   "dependencies": {
     "ajv": "^6.5.1",
     "antd": "^3.6.2",
+    "axios": "^0.18.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "react": "^16.4.0",
