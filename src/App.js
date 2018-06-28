@@ -23,8 +23,8 @@ class App extends React.Component {
           <Route path="/academics" component={Academics} />
           <Route path="/activities" component={Activities} />
           <Route path="/administration" component={Administration} />
-          <Route path="/facilities" component={Facilities} />
-          <Route path="/more" component={More} />
+          <Route path="/facilities" component={MainContainer} />
+          <Route path="/more" component={MainContainer} />
         </div>
       </BrowserRouter>
     );
