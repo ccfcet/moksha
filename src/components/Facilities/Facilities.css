@@ -8,6 +8,10 @@
     margin-top:15vh;
     padding: 2vw;
 }
+.ant-card.facilities-card.ant-card-bordered.ant-card-wider-padding {
+    border-radius: 10px;
+}
+
 .card-height{
 	height: 85px;
 }

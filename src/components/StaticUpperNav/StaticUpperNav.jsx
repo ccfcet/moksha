@@ -10,6 +10,8 @@ import './static-upper-nav.js'
 class StaticUpperNav extends React.Component {
     render() {
         return <div>
+        <div className="rect">
+        </div>
         <div id="navbar-blur" aria-hidden="true"></div>        
         <div id="static-upper-nav">
             <Menu mode="horizontal" id="static-upper-nav-menu">

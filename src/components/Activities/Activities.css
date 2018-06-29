@@ -9,6 +9,11 @@
     margin-top:15vh;
     padding: 2vw;
 }
+
+
+.ant-card.activities-card.ant-card-bordered.ant-card-wider-padding {
+    border-radius: 10px;
+}
 /*.ant-card-body{
 	height:80vh;
 }*/

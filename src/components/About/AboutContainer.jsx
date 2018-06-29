@@ -14,6 +14,8 @@ import './about-container.css'
 class AboutContainer extends React.Component {
     render() {
         return <div>
+	        <div className="rect">
+	        </div>
             <div id="outermost-container">
                 <Row>
                     <Col span={24}>

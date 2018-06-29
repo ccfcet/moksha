@@ -9,7 +9,7 @@ class Activities extends React.Component {
     render() {
         return <div className="main">
             <StaticUpperNav />
-            <Card >
+            <Card className="activities-card">
                 <div >
                     <h1>Activities</h1>
                     <Row gutter={16}>

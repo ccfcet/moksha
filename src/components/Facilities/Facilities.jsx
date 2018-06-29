@@ -11,7 +11,7 @@ class Facilities extends React.Component {
     render() {
         return <div className="facilities">
             <StaticUpperNav />
-            <Card>
+            <Card className="facilities-card">
                 <div>
                     <Row gutter={16}>
                         <Col span={8}>
