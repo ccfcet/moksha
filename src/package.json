@@ -13,7 +13,8 @@
     "email": "ccf@cet.ac.in"
   },
   "scripts": {
-    "dev": "next"
+    "start": "next start -p 8000",
+    "dev": "next -p 8000"
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",

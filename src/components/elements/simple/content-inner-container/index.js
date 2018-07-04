@@ -23,7 +23,7 @@ class ContentInnerContainer extends React.Component {
 				{content.map((article, index) => <div key={index} className="slider-content"
 					style={{
 						// background: `url('${article.image}') no-repeat center center`
-						background: `blue`
+						background: `#0000e7`
 					}}>
 					<div className="inner">
 						<h1>{article.title}</h1>

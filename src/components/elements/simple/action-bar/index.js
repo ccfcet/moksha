@@ -25,7 +25,7 @@ class ActionBar extends React.Component {
         #action-bar-inner-container-two {
           height: 100%;
           display: table;
-          border-left: 1px solid #9e9e9e;
+          // border-left: 1px solid #9e9e9e;
         }
 
         .action-bar-inner-element {
