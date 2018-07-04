@@ -18,10 +18,12 @@
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
+    "bootstrap": "^4.1.1",
     "next": "^6.1.1",
     "react": "^16.4.1",
     "react-animated-slider": "^1.1.2",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "reactstrap": "^6.2.0"
   },
   "author": "Central Computing Facility, College of Engineering Trivandrum",
   "license": "AGPL-3.0-or-later"
