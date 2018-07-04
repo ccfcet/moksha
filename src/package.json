@@ -1,0 +1,30 @@
+{
+  "name": "moksha",
+  "version": "1.0.0-alpha-1",
+  "private": true,
+  "description": "User interface project supporting functionalities of karma(https://github.com/ccfcet/karma) apis.",
+  "homepage": "https://github.com/ccfcet/moksha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccfcet/moksha"
+  },
+  "bugs": {
+    "url": "https://github.com/ccfcet/moksha/issues",
+    "email": "ccf@cet.ac.in"
+  },
+  "scripts": {
+    "start": "next start -p 8000",
+    "dev": "next -p 8000"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "bootstrap": "^4.1.1",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-animated-slider": "^1.1.2",
+    "react-dom": "^16.4.1",
+    "reactstrap": "^6.2.0"
+  },
+  "author": "Central Computing Facility, College of Engineering Trivandrum",
+  "license": "AGPL-3.0-or-later"
+}
