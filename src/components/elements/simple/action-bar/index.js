@@ -8,13 +8,14 @@ class ActionBar extends React.Component {
           height: 100%;
           display: grid;
           grid-template-rows: 0.5fr 1.61803fr 0.5fr;
+          background: #f3f3f3;
         }
 
         #action-bar-inner {
           grid-row-start: 2;
           grid-row-end: 3;
           display: grid;
-          grid-template-columns: 1.61803fr 1fr;
+          grid-template-columns: 4.85409fr 1fr;
         }
 
         #action-bar-inner-container-two {
