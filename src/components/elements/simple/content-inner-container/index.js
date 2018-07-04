@@ -6,9 +6,9 @@ import './slider.css'
 
 const content = [
 	{
-		title: 'Tortor Dapibus Commodo Aenean Quam',
+		title: 'Driving Innovation',
 		description:
-		'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
+			'The International Conference on Control, Communication and Computing (IC4 2018) brings together researchers, practising engineers, faculty and students to drive innovation through knowledge sharing.',
 		button: 'Discover',
 		image: 'https://i.imgur.com/DCdBXcq.jpg',
 		user: 'Erich Behrens',
@@ -17,23 +17,24 @@ const content = [
 ];
 
 class ContentInnerContainer extends React.Component {
-  render() {
-    return <div id="content-inner-container">
-      <Slider infinite="true" autoplay="4000" previousButton={null} nextButton={null}>
-        {content.map((article, index) => <div key={index} className="slider-content"
+	render() {
+		return <div id="content-inner-container">
+			<Slider infinite="true" autoplay="4000" previousButton={null} nextButton={null}>
+				{content.map((article, index) => <div key={index} className="slider-content"
 					style={{
-						background: `url('${article.image}') no-repeat center center`
-				 }}>
+						// background: `url('${article.image}') no-repeat center center`
+						background: `blue`
+					}}>
 					<div className="inner">
 						<h1>{article.title}</h1>
 						<p>{article.description}</p>
 						<button>{article.button}</button>
 					</div>
-        </div>)}
-      </Slider>
-      {/* Content Container */}
-    </div>
-  }
+				</div>)}
+			</Slider>
+			{/* Content Container */}
+		</div>
+	}
 }
 
 export default ContentInnerContainer
