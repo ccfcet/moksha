@@ -74,7 +74,7 @@ class MenuBar extends React.Component {
         text-align : center;
         font-weight :600;
         font-size: 3vw;
-        
+
   }
 
   .Navtext{
@@ -91,11 +91,7 @@ class MenuBar extends React.Component {
   .Navtext :hover{
     border-bottom:2px solid blue;
   }
-  @media only screen and (max-width : 766px) {
-    .Navtext{
-      font-size : 145%;
-    }
-  }
+
 }
 
   `}
