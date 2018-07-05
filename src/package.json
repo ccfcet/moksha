@@ -13,17 +13,33 @@
     "email": "ccf@cet.ac.in"
   },
   "scripts": {
-    "start": "next start -p 8000",
-    "dev": "next -p 8000"
+    "build": "next build",
+    "dev": "DEBUG=moksha nodemon ./bin/www",
+    "start": "NODE_ENV=production node ./bin/www",
+    "lint": "./node_modules/.bin/eslint ./ --report-unused-disable-directives --format 'node_modules/eslint-friendly-formatter'",
+    "lint--fix": "./node_modules/.bin/eslint ./ --fix --report-unused-disable-directives --format 'node_modules/eslint-friendly-formatter'"
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
     "bootstrap": "^4.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "helmet": "^3.12.1",
+    "morgan": "~1.9.0",
     "next": "^6.1.1",
     "react": "^16.4.1",
     "react-animated-slider": "^1.1.2",
     "react-dom": "^16.4.1",
     "reactstrap": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0"
   },
   "author": "Central Computing Facility, College of Engineering Trivandrum",
   "license": "AGPL-3.0-or-later"

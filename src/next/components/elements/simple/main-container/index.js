@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 class MainContainer extends React.Component {
   render() {
-    return <div id="main-container">
-      <style jsx>{`
+    return (
+      <div id="main-container">
+        <style jsx>
+          {`
         #main-container {
           display: grid;
           height: 100vh;
@@ -28,18 +30,20 @@ class MainContainer extends React.Component {
           grid-row-start: 2;
           grid-row-end: 3;
         }
-      `}</style>
-      <div id="menu-bar-container">
-        {this.props.menuBar}
+      `}
+        </style>
+        <div id="menu-bar-container">
+          {this.props.menuBar}
+        </div>
+        <div id="content-outer-container">
+          {this.props.contentInnerContainer}
+          <div id="action-bar-container">
+            {this.props.actionBar}
+          </div>
+        </div>
       </div>
-      <div id="content-outer-container">
-        {this.props.contentInnerContainer}
-      <div id="action-bar-container">
-        {this.props.actionBar}
-      </div>
-    </div>
-    </div>
+    );
   }
 }
 
-export default MainContainer
+export default MainContainer;

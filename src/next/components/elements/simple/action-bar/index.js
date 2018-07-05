@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 class ActionBar extends React.Component {
   render() {
-    return <div id="action-bar">
-      <style jsx>{`
+    return (
+      <div id="action-bar">
+        <style jsx>
+          {`
         #action-bar {
           height: 100%;
           display: grid;
@@ -35,22 +37,21 @@ class ActionBar extends React.Component {
           padding-left: 15px;
           padding-right: 15px;
         }
-        `}</style>
+        `}
+        </style>
         <div id="action-bar-inner">
-          <div id="action-bar-inner-container-one">
-
-          </div>
+          <div id="action-bar-inner-container-one" />
           <div id="action-bar-inner-container-two">
             {this.props.actions
               .map((child, index) => (
                 <div key={index} className="action-bar-inner-element">
                   {child}
-                </div>)
-              )}
+                </div>))}
           </div>
         </div>
       </div>
-    }
+    );
   }
+}
 
-  export default ActionBar
+export default ActionBar;
