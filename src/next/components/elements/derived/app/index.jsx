@@ -1,3 +1,5 @@
+import React from 'react';
+
 import MainContainer from '../../simple/main-container';
 import MenuBar from '../../simple/menu-bar';
 import ContentInnerContainer from '../../simple/content-inner-container';

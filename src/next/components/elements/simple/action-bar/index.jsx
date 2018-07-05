@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ActionBar extends React.Component {
   render() {
@@ -42,16 +43,25 @@ class ActionBar extends React.Component {
         <div id="action-bar-inner">
           <div id="action-bar-inner-container-one" />
           <div id="action-bar-inner-container-two">
-            {this.props.actions
-              .map((child, index) => (
-                <div key={index} className="action-bar-inner-element">
-                  {child}
-                </div>))}
+            {/* false-positive */}
+            {/* eslint-disable-next-line react/destructuring-assignment */}
+            {this.props.actions.map(child => (
+              <div key={child} className="action-bar-inner-element">
+                {child}
+              </div>))}
           </div>
         </div>
       </div>
     );
   }
 }
+
+ActionBar.propTypes = {
+  actions: PropTypes.arrayOf(PropTypes.string),
+};
+
+ActionBar.defaultProps = {
+  actions: null,
+};
 
 export default ActionBar;

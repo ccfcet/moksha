@@ -6,9 +6,10 @@ import './slider.css';
 
 const content = [
   {
+    id: 1,
     title: 'Driving Innovation',
     description:
-			'The International Conference on Control, Communication and Computing (IC4 2018) brings together researchers, practising engineers, faculty and students to drive innovation through knowledge sharing.',
+    'The International Conference on Control, Communication and Computing (IC4 2018) brings together researchers, practising engineers, faculty and students to drive innovation through knowledge sharing.',
     button: 'Discover',
     image: 'https://i.imgur.com/DCdBXcq.jpg',
     user: 'Erich Behrens',
@@ -20,14 +21,19 @@ class ContentInnerContainer extends React.Component {
   render() {
     return (
       <div id="content-inner-container">
-        <Slider infinite="true" autoplay="4000" previousButton={null} nextButton={null}>
-          {content.map((article, index) => (
+        <Slider
+          infinite="true"
+          autoplay="4000"
+          previousButton={null}
+          nextButton={null}
+        >
+          {content.map(article => (
             <div
-              key={index}
+              key={article.id}
               className="slider-content"
               style={{
-					  // background: `url('${article.image}') no-repeat center center`
-					  background: '#0000e7',
+                // background: `url('${article.image}') no-repeat center center`
+                background: '#0000e7',
               }}
             >
               <div className="inner">
@@ -37,7 +43,7 @@ class ContentInnerContainer extends React.Component {
                 <p>
                   {article.description}
                 </p>
-                <button>
+                <button type="button">
                   {article.button}
                 </button>
               </div>

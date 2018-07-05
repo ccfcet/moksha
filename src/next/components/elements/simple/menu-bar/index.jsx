@@ -33,7 +33,6 @@ class MenuBar extends React.Component {
 
   render() {
     return (
-
       <div>
         <div>
           <h1 id="clgname">
@@ -42,6 +41,7 @@ College Of Engineering Trivandrum
         </div>
         <Navbar color="light" light expand="md">
           <NavbarToggler onClick={this.toggle} />
+          {/* eslint-disable-next-line react/destructuring-assignment */}
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem className="mx-auto text-primary">
