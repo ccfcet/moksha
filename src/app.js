@@ -5,11 +5,10 @@ const logger = require('morgan');
 
 const helmet = require('helmet');
 
-const nextJS = require('next');
-
 const router = require('./routes/index');
 
 const app = express();
+app.nextJS = null;
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -22,8 +21,8 @@ app.use(helmet());
 // middleware for use of next.js
 app.use((req, res, next) => {
   // include nextJS app in res
-  const dev = process.env.NODE_ENV !== 'production';
-  res.nextJS = nextJS({ dev });
+  res.nextJS = app.nextJS;
+  res.nextJS.handle = app.nextJS.getRequestHandler();
   next();
 });
 
