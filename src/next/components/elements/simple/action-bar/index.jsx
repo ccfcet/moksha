@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class ActionBar extends React.Component {
   render() {
-    return <div id="action-bar">
-      <style jsx>{`
+    return (
+      <div id="action-bar">
+        <style jsx>
+          {`
         #action-bar {
           height: 100%;
           display: grid;
@@ -35,22 +38,30 @@ class ActionBar extends React.Component {
           padding-left: 15px;
           padding-right: 15px;
         }
-        `}</style>
+        `}
+        </style>
         <div id="action-bar-inner">
-          <div id="action-bar-inner-container-one">
-
-          </div>
+          <div id="action-bar-inner-container-one" />
           <div id="action-bar-inner-container-two">
-            {this.props.actions
-              .map((child, index) => (
-                <div key={index} className="action-bar-inner-element">
-                  {child}
-                </div>)
-              )}
+            {/* false-positive */}
+            {/* eslint-disable-next-line react/destructuring-assignment */}
+            {this.props.actions.map(child => (
+              <div key={child} className="action-bar-inner-element">
+                {child}
+              </div>))}
           </div>
         </div>
       </div>
-    }
+    );
   }
+}
 
-  export default ActionBar
+ActionBar.propTypes = {
+  actions: PropTypes.arrayOf(PropTypes.string),
+};
+
+ActionBar.defaultProps = {
+  actions: null,
+};
+
+export default ActionBar;
