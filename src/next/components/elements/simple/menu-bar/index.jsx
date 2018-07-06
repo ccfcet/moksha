@@ -12,112 +12,67 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class MenuBar extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
 
   render() {
     return (
-      <div>
+      <div >
         <div>
           <h1 id="clgname">
 College Of Engineering Trivandrum
           </h1>
         </div>
-        <Navbar color="light" light expand="md">
-          <NavbarToggler onClick={this.toggle} />
-          {/* eslint-disable-next-line react/destructuring-assignment */}
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-About
-                  </p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-Administartion
-                  </p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-Academics
-                  </p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-Activities
-                  </p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-Facilities
-                  </p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="mx-auto text-primary">
-                <NavLink href="/">
-                  <p className="Navtext">
-More
-                  </p>
-                </NavLink>
-              </NavItem>
-            </Nav>
-
-
-          </Collapse>
-        </Navbar>
+        <div id="navigation-wrapper">
+<ul id="top-navigation">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+        </div>
 
         <style jsx>
           {`
   @import url('https://fonts.googleapis.com/css?family=Raleway');
+  @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
   #clgname {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Markazi Text', serif;
         text-align : center;
-        font-weight :600;
-        font-size: 3vw;
+        font-weight: 500;
+        font-size: 3.5vw;
+        margin-top:3px;
+        margin-bottom: 0px;
 
   }
 
-  .Navtext{
-    display: block;
-    padding-left:4.5vw;
-    padding-right:4.5vw;
-    float:none;
-    border-bottom:2px solid transparent;
-    text-align:center;
-    font-size:1.5vw;
+#navigation-wrapper {
+ margin:0 auto;
+ margin-top:0px;
+ text-align:center;
+}
 
+#top-navigation {
+ padding-left:10px;
+ padding-right:10px;
+}
 
-  }
-  .Navtext :hover{
-    border-bottom:2px solid blue;
-  }
+#top-navigation li {
+ display:inline;
+ list-style-type:none;
+ margin:2;
+  padding-left:20px;
+  padding-right:20px;
+}
 
+#top-navigation li a{
+  color:#5d5d5d;
+  text-decoration: none;
 }
 
   `}
