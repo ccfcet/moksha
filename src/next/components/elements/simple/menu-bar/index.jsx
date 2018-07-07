@@ -46,6 +46,7 @@ College Of Engineering Trivandrum
         font-size: 3.5vw;
         margin-top:3px;
         margin-bottom: 0px;
+        color : black;
 
   }
 
