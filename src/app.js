@@ -4,11 +4,19 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const helmet = require('helmet');
+const nextJS = require('next');
 
-const router = require('./routes/index');
+const routes = require('./routes');
 
 const app = express();
-app.nextJS = null;
+
+const dev = process.env.NODE_ENV !== 'production';
+app.nextJSapp = nextJS({
+  dev,
+  dir: './next',
+});
+
+const handler = routes.getRequestHandler(app.nextJSapp);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -19,13 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 
 // middleware for use of next.js
-app.use((req, res, next) => {
-  // include nextJS app in res
-  res.nextJS = app.nextJS;
-  res.nextJS.handle = app.nextJS.getRequestHandler();
-  next();
-});
-
-app.use('/', router);
+app.use(handler);
 
 module.exports = app;

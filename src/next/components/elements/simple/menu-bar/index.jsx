@@ -14,9 +14,7 @@ import {
 } from 'reactstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 class MenuBar extends React.Component {
-
   render() {
     return (
       <div >
