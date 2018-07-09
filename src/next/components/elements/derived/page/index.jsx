@@ -2,7 +2,7 @@ import React from 'react';
 
 import MainContainer from '../../simple/main-container';
 import MenuBar from '../../simple/menu-bar';
-import ContentInnerContainer from '../../simple/content-inner-container';
+import Page from '../../content/page';
 import ActionBar from '../../simple/action-bar';
 
 const actions = ['Login', 'Settings'];
@@ -13,7 +13,7 @@ class App extends React.Component {
       <div id="app">
         <MainContainer
           menuBar={<MenuBar />}
-          contentInnerContainer={<ContentInnerContainer />}
+          content={<Page />}
           actionBar={<ActionBar actions={actions} />}
         />
         <style jsx global>

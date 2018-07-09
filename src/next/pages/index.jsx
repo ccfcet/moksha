@@ -1,5 +1,5 @@
 import React from 'react';
 
-import App from '../components/elements/derived/app';
+import Index from '../components/elements/derived/index';
 
-export default () => <App />;
+export default () => <Index />;
