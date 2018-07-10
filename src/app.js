@@ -9,6 +9,8 @@ const nextJSapp = require('moksha-next');
 
 const app = express();
 
+app.set('nextJSapp',nextJSapp);
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -16,6 +18,6 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(helmet());
-app.use(nextJSapp.handler());
+app.use(nextJSapp.handler);
 
 module.exports = app;
