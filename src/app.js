@@ -5,7 +5,7 @@ const logger = require('morgan');
 
 const helmet = require('helmet');
 
-const nextJShandler = require('moksha-next');
+const nextJSapp = require('moksha-next');
 
 const app = express();
 
@@ -16,7 +16,6 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(helmet());
-
-app.use(nextJShandler);
+app.use(nextJSapp.handler());
 
 module.exports = app;
