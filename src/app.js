@@ -9,7 +9,7 @@ const nextJSapp = require('moksha-next');
 
 const app = express();
 
-app.set('nextJSapp',nextJSapp);
+app.set('nextJSapp', nextJSapp);
 
 app.use(logger('dev'));
 app.use(express.json());

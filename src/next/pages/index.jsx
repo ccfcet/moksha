@@ -1,5 +1,16 @@
 import React from 'react';
 
-import Index from '../components/elements/derived/index';
+import HomePageContent from '../components/content/home_page';
+import MainLayout from '../components/derived/main_layout';
 
-export default () => <Index />;
+class HomePage extends React.Component {
+  render() {
+    return(
+      <MainLayout>
+        <HomePageContent />
+      </MainLayout>
+    )
+  }
+}
+
+export default HomePage
