@@ -1,8 +1,8 @@
 import React from 'react';
 
-import MainContainer from '../../simple/main-container';
-import MenuBar from '../../simple/menu-bar';
-import ActionBar from '../../simple/action-bar';
+import ActionBar from '../../simple/action_bar';
+import MainContainer from '../../simple/main_container';
+import TopBar from '../top_bar';
 
 const actions = ['Login', 'Settings'];
 
@@ -11,7 +11,7 @@ class MainLayout extends React.Component {
     return (
       <div id="main-layout">
         <MainContainer
-          menuBar={<MenuBar />}
+          topBar={<TopBar />}
           content={null}
           actionBar={<ActionBar actions={actions} />}
         />

@@ -33,7 +33,7 @@ class MainContainer extends React.Component {
             `}
           </style>
           <div id="menu-bar-container">
-            {this.props.menuBar}
+            {this.props.topBar}
           </div>
           <div id="content-outer-container">
             {this.props.contentInnerContainer}
