@@ -8,7 +8,15 @@ class TopBar extends React.Component {
     return (
       <div id="top-bar">
         {<BrandBar />}
-        {<MenuBar />}
+        {null}
+        <style jsx>
+          {`
+            #top-bar {
+              height: 100%;
+              background: #f3f3f3;
+            }
+          `}
+        </style>
       </div>
       );
     }

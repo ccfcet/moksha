@@ -16,7 +16,6 @@ class MenuBar extends React.Component {
         <style jsx>
           {`
             @import url('https://fonts.googleapis.com/css?family=Raleway');
-            @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
 
             #navigation-wrapper {
               margin:0 auto;

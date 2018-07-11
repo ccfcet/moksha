@@ -9,12 +9,14 @@ class BrandBar extends React.Component {
         </h1>
         <style jsx>
           {`
+            @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+
             #college-name {
               font-family: 'Markazi Text', serif;
               text-align : center;
               font-weight: 500;
               font-size: 3.5vw;
-              margin-top:3px;
+              margin-top: 0px;
               margin-bottom: 0px;
               color : black;
             }
