@@ -1,31 +1,7 @@
 import React from 'react';
 
-const _ = require('lodash')
-
 class MainContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log('gets here buhahaha')
-    if(_.has(props, "menuBarPresent"))
-    {
-      console.log('gets here')
-      this.state = {menuBarPresent: props.menuBarPresent}
-    }
-    else {
-      console.log("lalalala")
-      this.state = {menuBarPresent: false};
-    }
-  }
   render() {
-    if(this.state.menuBarPresent)
-    {
-      return (
-        <div>
-          Hey there!
-        </div>
-      )
-    }
-    else {
       return(
         <div id="main-container">
           <style jsx global>
@@ -72,14 +48,14 @@ class MainContainer extends React.Component {
                 {this.props.topBar}
               </div>
               <div id="content-outer-container">
-                {this.props.contentInnerContainer}
+                {this.props.content}
               </div>
               <div id="action-bar-container">
                 {this.props.actionBar}
               </div>
             </div>
           )
-        }}
+        }
       }
 
       export default MainContainer;

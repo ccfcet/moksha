@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import ReactAnimatedSlider from '../../simple/react_animated_slider';
 
 class HomePageContent extends React.Component {
 	render() {
 		return(
-			<div>
-				HomePageContent
+			<div id="home-page-content">
+				{<ReactAnimatedSlider />}
+				<style jsx>
+					{`
+						#home-page-content {
+							height: 100%;
+						}
+					`}
+				</style>
 			</div>
 		)
 	}

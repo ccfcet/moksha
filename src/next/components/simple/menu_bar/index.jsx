@@ -4,7 +4,7 @@ class MenuBar extends React.Component {
   render() {
     return (
       <div id="menu-bar">
-          <ul>
+          <ul id="menu-bar-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -17,18 +17,18 @@ class MenuBar extends React.Component {
           {`
             @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-            #navigation-wrapper {
+            #menu-bar {
               margin:0 auto;
               margin-top:0px;
               text-align:center;
             }
 
-            #top-navigation {
+            #menu-bar-list {
               padding-left:10px;
               padding-right:10px;
             }
 
-            #top-navigation li {
+            #menu-bar-list li {
               display:inline;
               list-style-type:none;
               margin: 2px;
@@ -36,7 +36,7 @@ class MenuBar extends React.Component {
               padding-right:20px;
             }
 
-            #top-navigation li a{
+            #menu-bar-list li a{
               color:#5d5d5d;
               text-decoration: none;
             }
