@@ -14,14 +14,16 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+
 /**
 * Create HTTP server.
 */
+
 var server = http.createServer(app);
 
-if(app.nextJSapp)
+if(app.get('nextJSapp'))
 {
-  app.nextJSapp.prepare().then(() => {
+  app.get('nextJSapp').prepare().then(() => {
     /**
     * Listen on provided port, on all network interfaces.
     */
