@@ -3,7 +3,8 @@ import ContactCardView from '../../../components/simple/contact_card_view'
 import Grid from '@material-ui/core/Grid';
 import CollegeCardView from '../../../components/simple/college_contact_card'
 import Divider from '@material-ui/core/Divider'
-// import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
+
 
 class ContactPage extends React.Component{
     render(){
@@ -125,7 +126,7 @@ class ContactPage extends React.Component{
 							padding-top : 50px;
 							text-align : center;
 							background-color : #0089ff;
-							font-size : 2em;
+							font-size : 50px;
 							color : white;
 						}
 
