@@ -11,7 +11,7 @@ class MenuBar extends React.Component {
           <li><a href="/activities">Activities</a></li>
           <li><a href="/departments">Departments</a></li>
           <li><a href="/facilities">Facilities</a></li>
-          <li><a href="/more">More</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
         <style jsx>
           {`
