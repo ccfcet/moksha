@@ -1,8 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-// import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 import LinkCard from './link_card'
 
@@ -10,8 +7,24 @@ class LinksContainer extends React.Component {
     render() {
         return (
             <div>
-                <style jsx>
-                    {`
+                <div id='outercontainer'>
+                    <Grid container spacing={8} justify='center'>
+                        <Grid item xs={12} sm={3}>
+                            <div id='headcontainer'>
+                                    Recent Tenders
+                            </div>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={8} justify='center'>
+                        <Grid item xs={10} sm={10}>
+                            <div id='card-container'>
+                                {<LinkCard />}
+                            </div>
+                        </Grid>
+                    </Grid>
+                </div>
+
+                <style jsx>{`
                         #outercontainer {
                             padding-left: 2;
                             padding-right: 2;
@@ -20,25 +33,13 @@ class LinksContainer extends React.Component {
                             font-size: 24;
                         }
                         #heading {
-                            font-size: 18;
+                            margin-top:10
                         }  
                         #card-container {
                             margin:2
                         }
-                    `}
-                </style>
+                    `}</style>
 
-                <div id='outercontainer'>
-                    <div id='headcontainer'>
-                        <Typography id='heading'>
-                            Tenders
-                    </Typography>
-                    </div>
-
-                    <div id='card-container'>
-                        {<LinkCard />}
-                    </div>
-                </div>
             </div >
         );
     }
