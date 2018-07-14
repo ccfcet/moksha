@@ -1,13 +1,11 @@
 import React from 'react';
-import About from '../../simple/about_content';
 
 class AboutPageContent extends React.Component {
 	render() {
 		return(
 			<div id="about-page-content">
 				<div id="head">
-					<h1>College Of Engineering, Trivandrum</h1>
-					<h3> Our Story</h3>
+					About Us
 				</div>
 				<div id="about-content">
 The College of Engineering, Trivandrum was established in 1939 as the first
@@ -24,24 +22,68 @@ Education in the late fifties, the College administration came under the control
 of the Government of Kerala. The College was shifted to the present sprawling
 125 acres in 1980.
 				</div>
+				<div id="inner-columns">
+					<div id="inner-column1">
+						<h2>Mission</h2>
+						To facilitate Quality Engineering Education to Equip and Enrich
+						Young Men and Women to Meet Global Challenges in Development,
+						Innovation and Application of Technology in the Service of Humanity
+					</div>
+					<div id="inner-column2">
+						<h2>Vision</h2>
+						National Level Excellence and International Visibility in Every
+						facet of Engineering Education.
+					</div>
+				</div>
 
 				<style jsx>
 					{`
+						@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 						#about-page-content {
 							height : 100%;
 							display : grid;
-							grid-template-rows : 1fr 1.61803398875fr;
-							vertical-align : center;
+							grid-template-rows : .5fr 1.61803398875fr 1fr;
 						}
 
 						#head {
 							grid-row : 1/2;
+							height : 100%;
+							padding-top : 50px;
 							text-align : center;
-							background-color : #a6bbcc;
+							background-color : #0089ff;
+							font-size : 2em;
+							color : white;
 						}
 
 						#about-content {
 							grid-row : 2/3;
+							padding : 0px 50px;
+							font-family: 'Roboto', sans-serif;
+							font-size : 1.5em;
+							background-color : #0089ff;
+							color : white;
+						}
+
+						#inner-columns {
+							grid-row : 3/4;
+							height : 100%;
+							display : grid;
+							grid-template-columns : 50% 50%;
+							font-size : 1.4em;
+
+						}
+
+						#inner-column1 {
+							background-color : #40acf9;
+							color : white;
+							padding : 0px 50px;
+						}
+
+						#inner-column2 {
+							background-color : #00a1ff;
+							color : white;
+							padding : 0px 50px;
 						}
 
 					`}
