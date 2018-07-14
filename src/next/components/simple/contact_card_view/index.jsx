@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 const styles = {
   card: {
-    minWidth: 275,
+    minWidth: 300,
     marginTop:20
   },
   bullet: {
