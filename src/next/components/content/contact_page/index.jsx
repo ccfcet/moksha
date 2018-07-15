@@ -138,11 +138,13 @@ class ContactPage extends React.Component{
 							font-size : 1.5em;
 							background-color : white;
 							color : white;
+                            padding-bottom:20px
 						}
                         #college-contact{
                             grid-row: 2/3;
                             padding-top :30px;
                             margin-top:20px;
+							font-family: 'Roboto', sans-serif;
                         }
                         #firstDivider{
                             margin-top :20px;

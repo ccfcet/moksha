@@ -41,7 +41,7 @@ function SimpleCard(props) {
             {props.PropertyName}
           </Typography>
           <Divider/>
-        <div class={classes.content}>  
+        <div className={classes.content}>  
           <Typography color='textSecondary'>
             {props.PropertyContent1}
           </Typography>
