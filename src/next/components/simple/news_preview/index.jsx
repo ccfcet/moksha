@@ -74,12 +74,13 @@ class NewsPreview extends React.Component {
               News Highlights
             </Typography>
             <Divider />
+
             {
             articlesPreview.map( key => (
               <div>
                 <div className={classes.articleBase}>
                   <div className={classes.articleImg}>
-                    <img src={`/static/${key.img}.jpg`} alt={key.heading} width="100%"/>
+                    <img src={`/static/${key.img}.jpg`} alt={key.heading} title={key.heading} width="100%"/>
                   </div>
                   <div className={classes.articleContent}>
                     <Typography gutterBottom variant="headline">
