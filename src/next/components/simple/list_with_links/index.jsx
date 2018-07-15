@@ -1,49 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 import LinkCard from './link_card'
+const styles = {
+  card: {
+    maxWidth: "100%",
+    paddingLeft: "0",
+    paddingRight: "0"
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+};
 
-class LinksContainer extends React.Component {
-    render() {
-        return (
-            <div>
-                <div id='outercontainer'>
-                    <Grid container justify='center'>
-                        <Grid item xs={12} sm={3}>
-                        <Typography gutterBottom variant="headline" component="h1">
-                            Recent Tender
-                        </Typography>
-                        </Grid>
-                    </Grid>
-                    <Grid container spacing={8} justify='center'>
-                        <Grid item xs={10} sm={10}>
-                            <div id='card-container'>
-                                {<LinkCard />}
-                            </div>
-                        </Grid>
-                    </Grid>
-                </div>
-
-                <style jsx>{`
-                        #outercontainer {
-                            padding-left: 2;
-                            padding-right: 2;
-                        }
-                        #headcontainer {
-                            font-size: 24;
-                        }
-                        #heading {
-                            margin-top:10
-                        }  
-                        #card-container {
-                            margin:2
-                        }
-                    `}</style>
-
-            </div >
-        );
-    }
-
+function SimpleMediaCard(props) {
+  const { classes } = props;
+  return (
+    <div>
+      <Typography gutterBottom variant="headline" component="h1">
+        Recent Tenders
+          </Typography>
+      <Divider />
+      <Grid container justify="space-around">
+        <LinkCard />
+      </Grid>
+    </div>
+  );
 }
 
-export default LinksContainer;
+SimpleMediaCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(SimpleMediaCard); 
