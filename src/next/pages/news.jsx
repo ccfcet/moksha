@@ -16,6 +16,7 @@ import Button from '@material-ui/core/Button';
 
 import MainLayout from '../components/derived/main_layout';
 import NewsPreview from '../components/simple/news_preview';
+import TendersList from '../components/simple/list_with_links';
 
 const styles = theme => ({
   root: {
@@ -112,6 +113,9 @@ class News extends React.Component {
               </Card>
               
               <NewsPreview />
+
+              <TendersList />
+
             </Grid>
           </Grid>
         </Grid>

@@ -8,11 +8,11 @@ class LinksContainer extends React.Component {
         return (
             <div>
                 <div id='outercontainer'>
-                    <Grid container spacing={8} justify='center'>
+                    <Grid container justify='center'>
                         <Grid item xs={12} sm={3}>
-                            <div id='headcontainer'>
-                                    Recent Tenders
-                            </div>
+                        <Typography gutterBottom variant="headline" component="h1">
+                            Recent Tender
+                        </Typography>
                         </Grid>
                     </Grid>
                     <Grid container spacing={8} justify='center'>
