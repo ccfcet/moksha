@@ -10,56 +10,95 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-const styles = {
+const styles = theme => ({
   card: {
     maxWidth: "100%",
     paddingLeft: "0",
     paddingRight: "0"
   },
+  cardContent: {
+    padding: 0
+  },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-};
+  articleBase: {
+    display: "grid",
+    gridColumn: "1fr 4fr 1fr 8fr 1fr",
+    gridRow: "8dp 1fr 8dp",
+    padding: theme.spacing.unit * 2,
+    marginTop: theme.spacing.unit * 2,
+  },
+  articleHeading: {
+    margin: theme.spacing.unit * 2,
+  },
+  articleImg: {
+    gridArea: "2 / 2 / 2 / 2"
+  },
+  articleContent: {
+    padding: theme.spacing.unit * 2,
+    gridArea: "2 / 4 / 2 / 5"
+  }
+});
 
-function SimpleMediaCard(props) {
-  const { classes } = props;
-  return (
-    <div>
-      <Card className={classes.card} square={true}>
-        <CardContent>
-          <Typography gutterBottom variant="headline" component="h1">
-            News Highlight
-          </Typography>
-          <Divider />
-          <Grid container justify="space-around">
-            <Grid item xs={4}>
-              <img src="https://lh3.googleusercontent.com/kO8QB1Hj8SN2wHN3gfDYAbnWB1VkJJYJIh7PxY9MNACU_22xGPA67KOOWZ1pyEqNNrva4JcUZljfBF1dyFcVF-pUShG0hW7dyQ=s300" width="100%" />
-            </Grid>
-            <Grid item xs={7}>
-            <Typography gutterBottom variant="headline">
-              Engaging with Portuguese Design
+class NewsPreview extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      articlesPreview: [{
+        img: "preview",
+        heading: "Engaging with Portuguese Design",
+        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      }],
+    }
+  }
+  render () {
+    const { classes } = this.props;
+    const { articlesPreview } = this.state;
+    return (
+      <div>
+        <Card className={classes.card} square={true}>
+          <CardContent className={classes.cardContent}>
+            <Typography className={classes.articleHeading} variant="headline" component="h1">
+              News Highlights
             </Typography>
-            <Typography gutterBottom>
-              A fascinating exhibition at RISD showcases contemporary work using traditional materials and
-              techniques and kicks off a multiyear collaboration between RISD and several organizations in 
-              Portugal. 
-            </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            Read More News
-          </Button>
-        </CardActions>
-      </Card>
-    </div>
-  );
+            <Divider />
+            {
+            articlesPreview.map( key => (
+              <div className={classes.articleBase}>
+                <div className={classes.articleImg}>
+                  <img src={`/static/${key.img}.jpg`} alt={key.heading} width="100%"/>
+                </div>
+                <div className={classes.articleContent}>
+                  <Typography gutterBottom variant="headline">
+                    {key.heading}
+                  </Typography>
+                  <Typography gutterBottom>
+                    {key.text} 
+                  </Typography>
+                  <Button size="small" color="primary">
+                    Read More
+                  </Button>
+                </div>
+              </div>
+            ))
+            }
+            <Divider dark />
+          </CardContent>
+          <CardActions>
+            <Button size="small" color="primary">
+              Read More News
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+    );
+  }
 }
 
-SimpleMediaCard.propTypes = {
+NewsPreview.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimpleMediaCard);
+export default withStyles(styles)(NewsPreview);

@@ -50,72 +50,75 @@ class News extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <Grid 
-        container
-        className={classes.root}
-        direction="column"
-        justify="flex-start"
-        alignItems="center"
-        spacing={16}
-      >
-        <Grid item xs={12}>
-          <Paper className={classes.paper} elevation={1} square={true}>
-            <Typography variant="headline">
-              NEWS AND TENDERS
-            </Typography>
-          </Paper>
-        </Grid>
-        <Grid item xs={8}>
-          <Grid
-            container
-            justify="flex-start"
-            spacing={16}
-          >
-            <Grid item xs={3}>
-              <Paper elevation={1} square={true}>
-                <List component="nav" disablePadding={true}>
-                  {
-                    this.state.sidebarButtons.map(value => (
-                      <ListItem button disableTypography={true} divider>
-                        <ListItemText> 
-                          <Typography className={classes.sidebarButtonText} variant="button">
-                            {value}
-                          </Typography>
-                        </ListItemText>
-                      </ListItem>
-                    ))
-                  }
-                </List>
-              </Paper>
-            </Grid>
-            <Grid item xs={9}>
-              <Card className={classes.card} square={true}>
-                <CardMedia
-                  className={classes.media}
-                  image="https://lh3.googleusercontent.com/gOpfjctx6qRG0hCN-4vBxEtNbL5226p_Q9su94GHdd5T1uByG1KfvDoUUwrlQpsbxLFKXifXXnhhXZ2JQ3NUgUui0gewFPsJ5KJMj0dqJA=s816"
-                  title="Contemplative Reptile"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="headline" component="h2">
-                    Depth of Focus
-                  </Typography>
-                  <Typography component="p">
-                    Digital media fellow <b>Rocio Delaloye</b> MFA 16 DM helps the RISD Museum reach new audiences
-                    with bold creative content.
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Learn More
-                  </Button>
-                </CardActions>
-              </Card>
-              
-              <NewsPreview />
+      <React.Fragment>
+        <CssBaseline />
+        <Grid 
+          container
+          className={classes.root}
+          direction="column"
+          justify="flex-start"
+          alignItems="center"
+          spacing={16}
+        >
+          <Grid item xs={12}>
+            <Paper className={classes.paper} elevation={1} square={true}>
+              <Typography variant="headline">
+                NEWS AND TENDERS
+              </Typography>
+            </Paper>
+          </Grid>
+          <Grid item xs={8}>
+            <Grid
+              container
+              justify="flex-start"
+              spacing={16}
+            >
+              <Grid item xs={3}>
+                <Paper elevation={1} square={true}>
+                  <List component="nav" disablePadding={true}>
+                    {
+                      this.state.sidebarButtons.map(value => (
+                        <ListItem button disableTypography={true} divider>
+                          <ListItemText> 
+                            <Typography className={classes.sidebarButtonText} variant="button">
+                              {value}
+                            </Typography>
+                          </ListItemText>
+                        </ListItem>
+                      ))
+                    }
+                  </List>
+                </Paper>
+              </Grid>
+              <Grid item xs={9}>
+                <Card className={classes.card} square={true}>
+                  <CardMedia
+                    className={classes.media}
+                    image="https://lh3.googleusercontent.com/gOpfjctx6qRG0hCN-4vBxEtNbL5226p_Q9su94GHdd5T1uByG1KfvDoUUwrlQpsbxLFKXifXXnhhXZ2JQ3NUgUui0gewFPsJ5KJMj0dqJA=s816"
+                    title="Contemplative Reptile"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="headline" component="h2">
+                      Depth of Focus
+                    </Typography>
+                    <Typography component="p">
+                      Digital media fellow <b>Rocio Delaloye</b> MFA 16 DM helps the RISD Museum reach new audiences
+                      with bold creative content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Learn More
+                    </Button>
+                  </CardActions>
+                </Card>
+                
+                <NewsPreview />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </React.Fragment>
     );
   }
 }
