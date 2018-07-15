@@ -50,6 +50,16 @@ class NewsPreview extends React.Component {
         img: "preview",
         heading: "Engaging with Portuguese Design",
         text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      },
+      {
+        img: "preview",
+        heading: "Engaging with Portuguese Design",
+        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      },
+      {
+        img: "preview",
+        heading: "Engaging with Portuguese Design",
+        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
       }],
     }
   }
@@ -66,25 +76,28 @@ class NewsPreview extends React.Component {
             <Divider />
             {
             articlesPreview.map( key => (
-              <div className={classes.articleBase}>
-                <div className={classes.articleImg}>
-                  <img src={`/static/${key.img}.jpg`} alt={key.heading} width="100%"/>
+              <div>
+                <div className={classes.articleBase}>
+                  <div className={classes.articleImg}>
+                    <img src={`/static/${key.img}.jpg`} alt={key.heading} width="100%"/>
+                  </div>
+                  <div className={classes.articleContent}>
+                    <Typography gutterBottom variant="headline">
+                      {key.heading}
+                    </Typography>
+                    <Typography gutterBottom>
+                      {key.text} 
+                    </Typography>
+                    <Button size="small" color="primary">
+                      Read More
+                    </Button>
+                  </div>
                 </div>
-                <div className={classes.articleContent}>
-                  <Typography gutterBottom variant="headline">
-                    {key.heading}
-                  </Typography>
-                  <Typography gutterBottom>
-                    {key.text} 
-                  </Typography>
-                  <Button size="small" color="primary">
-                    Read More
-                  </Button>
-                </div>
+                <Divider dark />
               </div>
             ))
             }
-            <Divider dark />
+
           </CardContent>
           <CardActions>
             <Button size="small" color="primary">
