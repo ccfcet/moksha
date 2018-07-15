@@ -14,7 +14,8 @@ const styles = theme => ({
   card: {
     maxWidth: "100%",
     paddingLeft: "0",
-    paddingRight: "0"
+    paddingRight: "0",
+    marginBottom: theme.spacing.unit * 2,
   },
   cardContent: {
     padding: 0
@@ -89,7 +90,7 @@ class NewsPreview extends React.Component {
                     <Typography gutterBottom>
                       {key.text} 
                     </Typography>
-                    <Button size="small" color="primary">
+                    <Button size="small">
                       Read More
                     </Button>
                   </div>

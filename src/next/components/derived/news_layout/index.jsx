@@ -42,7 +42,7 @@ class News extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarButtons: ["Stories", "Events", "Exhibitions", "Xyz", "Tenders"]
+      sidebarButtons: ["Stories", "Events", "Exhibitions", "Results", "Tenders"]
     }
   }
 
@@ -109,12 +109,9 @@ class News extends React.Component {
                   </Button>
                 </CardActions>
               </Card>
-              <NewsPreview />
-            </Grid>
 
-            <Grid item xs={3}>
-            </Grid>
-            <Grid item xs={9}>
+              <NewsPreview />
+              
               <Card className={classes.card} square={true}>
                 <CardContent>
                   <TendersList />
@@ -126,7 +123,6 @@ class News extends React.Component {
                 </CardActions>
               </Card>
             </Grid>
-
           </Grid>
         </Grid>
       </Grid>
