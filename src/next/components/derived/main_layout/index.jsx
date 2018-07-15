@@ -13,10 +13,10 @@ class MainLayout extends React.Component {
         topBar={<TopBar />}
         content={this.props.children}
         actionBar={<ActionBar actions={actions} />} />
-        );
-      }
+      );
     }
+  }
 
-    MainLayout.displayName = 'MainLayout';
+  MainLayout.displayName = 'MainLayout';
 
-    export default MainLayout;
+  export default MainLayout;

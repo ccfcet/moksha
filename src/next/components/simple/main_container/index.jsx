@@ -10,7 +10,6 @@ class MainContainer extends React.Component {
               @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
               @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-
               body {
                 margin: 0;
                 padding: 0;

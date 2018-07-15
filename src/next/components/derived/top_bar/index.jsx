@@ -8,7 +8,7 @@ class TopBar extends React.Component {
     return (
       <div id="top-bar">
         {<BrandBar />}
-        {<MenuBar />}
+        {/* {<MenuBar />} */}
         <style jsx>
           {`
             #top-bar {

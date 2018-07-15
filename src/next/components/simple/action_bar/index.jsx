@@ -11,7 +11,7 @@ class ActionBar extends React.Component {
           height: 100%;
           display: grid;
           grid-template-rows: 0.5fr 1.61803fr 0.5fr;
-          background: #f3f3f3;
+          background: #fafafa;
         }
 
         #action-bar-inner {
