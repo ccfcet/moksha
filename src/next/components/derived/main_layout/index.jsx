@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ActionBar from '../../simple/action_bar';
+import ActionBar from '../../derived/action_bar';
 import MainContainer from '../../simple/main_container';
 import TopBar from '../top_bar';
 

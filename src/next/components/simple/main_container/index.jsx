@@ -25,7 +25,7 @@ class MainContainer extends React.Component {
                   display: grid;
                   height: 100vh;
                   width: 100vw;
-                  grid-template-rows:1fr 11.3262379212fr 1fr;
+                  grid-template-rows: 1fr 11.3262379212fr 1fr;
                 }
 
                 #top-bar-container {
@@ -43,6 +43,13 @@ class MainContainer extends React.Component {
                   border-top: 1px solid #9e9e9e;
                   grid-row-start: 3;
                   grid-row-end: 4;
+                }
+
+                @media screen and (max-height: 479px) {
+                  // override for small screens
+                  #main-container {
+                    grid-template-rows:1fr 6.472135955fr 1fr;
+                  }
                 }
                 `}
               </style>

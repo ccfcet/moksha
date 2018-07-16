@@ -13,7 +13,9 @@ class TopBar extends React.Component {
           {`
             #top-bar {
               height: 100%;
-              background: #f3f3f3;
+              background: #fafafa;
+              display: grid;
+              grid-template-rows: 0.5fr 1.61803fr 0.5fr;
             }
           `}
         </style>
