@@ -5,7 +5,7 @@ class HomePageContent extends React.Component {
 	render() {
 		return(
 			<div id="home-page-content">
-				{<ReactAnimatedSlider />}
+				<ReactAnimatedSlider />
 				<style jsx>
 					{`
 						#home-page-content {
