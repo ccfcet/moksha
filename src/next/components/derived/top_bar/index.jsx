@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Headroom from 'react-headroom'
 import BrandBar from '../../simple/brand_bar'
 import MenuBar from '../../simple/menu_bar';
 
@@ -8,7 +8,9 @@ class TopBar extends React.Component {
     return (
       <div id="top-bar">
         {<BrandBar />}
-        {/* {<MenuBar />} */}
+        <Headroom>
+        {<MenuBar />}
+        </Headroom>
         <style jsx>
           {`
             #top-bar {
