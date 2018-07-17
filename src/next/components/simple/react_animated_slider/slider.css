@@ -39,13 +39,13 @@
   font-weight: 900;
   margin: 0 auto;
   max-width: 840px;
-  color: #f3f3f3;
+  color: #fafafa;
   font-size: 64px;
   line-height: 1;
 }
 
 .slider-content .inner p {
-  color: #f3f3f3;
+  color: #fafafa;
   font-size: 16px;
   line-height: 1.5;
   margin: 20px auto 30px;
@@ -62,7 +62,7 @@ button {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   border: none;
-  background: #f3f3f3;
+  background: #fafafa;
   border-radius: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -70,11 +70,12 @@ button {
   font-weight: 400;
   font-size: 13px;
   cursor: cursor;
+  color: #5d5d5d;
 }
 
 button:hover {
-  color: #FFFFFF;
-  background: #222222;
+  color: #fafafa;
+  background: #5d5d5d;
   /* -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); */
 }

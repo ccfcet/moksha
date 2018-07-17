@@ -2,7 +2,7 @@ import React from 'react';
 
 import NewsPage from '../../derived/news_layout';
 import TopBar from '../../derived/top_bar';
-import ActionBar from '../../simple/action_bar';
+import ActionBar from '../../derived/action_bar';
 
 const actions = ['Login', 'Settings'];
 
@@ -27,7 +27,7 @@ class NewsPageContent extends React.Component {
               }
               `}
             </style>
-            
+
               <style jsx> {`
                 #top-bar-container {
                   border-bottom: 1px solid #9e9e9e;
@@ -49,7 +49,7 @@ class NewsPageContent extends React.Component {
             <div id='action-bar-container'>
               <ActionBar actions={actions} />
             </div>
-            
+
         </div>
     )
   }
