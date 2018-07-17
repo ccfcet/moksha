@@ -10,7 +10,7 @@ const content = [
     description:
     'The 16th International Conference on Humanizing Work and Work Environment(HWWE 2018) offers a platform for researchers, practitioners, manufacturers and academicians to discuss the ongoing research  across the world  and help exchange  ideas in addressing work related issues faced by human beings in all facets of daily activities.',
     button: 'Discover',
-    image: './static/images/hwwe_2018.png',
+    image: './static/images/hwwe_2018.jpg',
   },
 ];
 
