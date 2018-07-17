@@ -51,7 +51,7 @@
   max-width: 640px;
 }
 
-button {
+.slider-content button {
   -webkit-appearance: none;
   appearance: none;
   /* -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
@@ -72,7 +72,7 @@ button {
   color: #5d5d5d;
 }
 
-button:hover {
+.slider-content button:hover {
   color: #fafafa;
   background: #5d5d5d;
   /* -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
