@@ -32,7 +32,6 @@
     "reactstrap": "^6.3.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-friendly-formatter": "^4.0.1",

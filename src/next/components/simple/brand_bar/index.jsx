@@ -4,27 +4,50 @@ class BrandBar extends React.Component {
   render() {
     return (
       <div id="brand-bar">
+        <div id="brand-bar-element">
         <h1 id="college-name">
-          College Of Engineering Trivandrum
+          College of Engineering Trivandrum
         </h1>
+      </div>
         <style jsx>
           {`
-            @import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+            #brand-bar {
+              grid-row-start: 2;
+              grid-row-end: 3;
+              height: 100%;
+              display: table;
+            }
+
+            #brand-bar-element {
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
+            }
 
             #college-name {
-              font-family: 'Markazi Text', serif;
-              text-align : center;
-              font-weight: 500;
-              font-size: 3.5vw;
+              font-family: 'Open Sans',sans-serif;
+              text-align: center;
+              font-weight: 300;
+              font-size: 2.9vh;
               margin-top: 0px;
               margin-bottom: 0px;
-              color : black;
+              color: #5d5d5d;
+              // padding-top: 1.5vh;
             }
-          `}
-        </style>
-      </div>
-    )
-  }
-}
 
-export default BrandBar
+            @media screen and (max-height: 479px) {
+              // override for small screens
+              #college-name {
+                  font-size: 5.0vh;
+              }
+            }
+            `}
+          </style>
+        </div>
+      )
+    }
+  }
+
+  export default BrandBar

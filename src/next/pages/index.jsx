@@ -7,10 +7,10 @@ class HomePage extends React.Component {
   render() {
     return(
       <MainLayout>
-        <HomePageContent />
+        {/* <HomePageContent /> */}
       </MainLayout>
     )
   }
 }
 
-export default HomePage
+export default HomePage;

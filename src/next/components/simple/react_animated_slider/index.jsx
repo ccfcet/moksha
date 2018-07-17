@@ -6,13 +6,11 @@ import './slider.css';
 const content = [
   {
     id: 1,
-    title: 'Driving Innovation',
+    title: 'Humanizing Work',
     description:
-    'The International Conference on Control, Communication and Computing (IC4 2018) brings together researchers, practising engineers, faculty and students to drive innovation through knowledge sharing.',
+    'The 16th International Conference on Humanizing Work and Work Environment(HWWE 2018) offers a platform for researchers, practitioners, manufacturers and academicians to discuss the ongoing research  across the world  and help exchange  ideas in addressing work related issues faced by human beings in all facets of daily activities.',
     button: 'Discover',
-    image: 'https://i.imgur.com/DCdBXcq.jpg',
-    user: 'Erich Behrens',
-    userProfile: 'https://i.imgur.com/0Clfnu7.png',
+    image: './static/images/hwwe_2018.png',
   },
 ];
 
@@ -31,8 +29,8 @@ class ReactAnimatedSlider extends React.Component {
                 key={article.id}
                 className="slider-content"
                 style={{
-                  // background: `url('${article.image}') no-repeat center center`
-                  background: '#0000e7',
+                  background: `url('${article.image}') no-repeat center center`
+                  // background: '#3f3f3f',
                 }}
                 >
                   <div className="inner">
@@ -42,9 +40,9 @@ class ReactAnimatedSlider extends React.Component {
                     <p>
                       {article.description}
                     </p>
-                    <button type="button">
+                    <a href="http://hwwe2018.cet.ac.in/"><button type="button">
                       {article.button}
-                    </button>
+                    </button></a>
                   </div>
                 </div>
               ))}

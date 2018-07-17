@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ActionBar from '../../simple/action_bar';
+import ActionBar from '../../derived/action_bar';
 import MainContainer from '../../simple/main_container';
 import TopBar from '../top_bar';
 
@@ -13,10 +13,10 @@ class MainLayout extends React.Component {
         topBar={<TopBar />}
         content={this.props.children}
         actionBar={<ActionBar actions={actions} />} />
-        );
-      }
+      );
     }
+  }
 
-    MainLayout.displayName = 'MainLayout';
+  MainLayout.displayName = 'MainLayout';
 
-    export default MainLayout;
+  export default MainLayout;
