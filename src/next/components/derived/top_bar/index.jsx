@@ -7,37 +7,37 @@ class TopBar extends React.Component {
   render() {
     return (
       <div id="top-bar">
-        <div id="bbar">
-        {<BrandBar />}
+        <div id="brand-bar-container">
+          <BrandBar />
         </div>
-        <div id="mbar">
+        {/* <div id="menu-bar-container">
           <Headroom>
-            {<MenuBar />}
+            <MenuBar />
           </Headroom>
-        </div>
+        </div> */}
         <style jsx>
           {`
             #top-bar {
               height: 100%;
               background: #fafafa;
               display: grid;
-              grid-template-rows: 1fr 1.61803398875fr;
+              grid-template-rows: 1.61803398875fr 1fr;
             }
 
-            #bbar {
-              grid-row : 1/2;
-              align : center;
-              padding-left : 38vw;
-
+            #brand-bar-container {
+              grid-row-start: 1;
+              grid-row-end: 2;
+              display: grid;
+              grid-template-rows: 0.5fr 1.61803398875fr 0.5fr;
             }
 
-            #mbar {
-              grid-row : 2/3;
+            #menu-bar-container {
+              grid-row-start: 2;
+              grid-row-end: 3;
             }
-
-          `}
-        </style>
-      </div>
+            `}
+          </style>
+        </div>
       );
     }
   }
