@@ -34,7 +34,7 @@ function SimpleMediaCard(props) {
         </CardContent>
         <CardActions>
           <Button size="small" color="primary" href={props.departmentURL}>
-            Learn More
+            Information
           </Button>
         </CardActions>
       </Card>

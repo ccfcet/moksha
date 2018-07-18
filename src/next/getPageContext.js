@@ -7,7 +7,24 @@ import green from '@material-ui/core/colors/green';
 
 // A theme with custom primary and secondary color.
 // It's optional.
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: purple[300],
+      main: '#0000e8',
+      dark: '#0000b4',
+    },
+    secondary: {
+      light: green[300],
+      main: '#0000ff',
+      dark: '#0000ca',
+    },
+    text: {
+      primary: '#ffffff',
+      secondary: '#ffffff',
+    },
+  },
+});
 
 function createPageContext() {
   return {

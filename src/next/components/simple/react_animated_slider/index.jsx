@@ -29,8 +29,14 @@ class ReactAnimatedSlider extends React.Component {
                 key={article.id}
                 className="slider-content"
                 style={{
-                  background: `url('${article.image}') no-repeat center center`
-                  // background: '#3f3f3f',
+                  // background: `url('${article.image}') no-repeat center center`
+                  // background: '#0000e7',
+                  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0000e8+0,0000ff+100 */
+                  background: 'rgb(0,0,232)', /* Old browsers */
+                  background: '-moz-linear-gradient(top, rgba(0,0,232,1) 0%, rgba(0,0,255,1) 100%)', /* FF3.6-15 */
+                  background: '-webkit-linear-gradient(top, rgba(0,0,232,1) 0%,rgba(0,0,255,1) 100%)', /* Chrome10-25,Safari5.1-6 */
+                  background: 'linear-gradient(to bottom, rgba(0,0,232,1) 0%,rgba(0,0,255,1) 100%)', /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                  filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#0000e8\', endColorstr=\'#0000ff\',GradientType=0 )', /* IE6-9 */
                 }}
                 >
                   <div className="inner">
@@ -52,11 +58,11 @@ class ReactAnimatedSlider extends React.Component {
                 #react-animated-slider-container {
                   height: 100%;
                 }
-              `}
-            </style>
-          </div>
-        )
+                `}
+              </style>
+            </div>
+          )
+        }
       }
-    }
 
-    export default ReactAnimatedSlider
+      export default ReactAnimatedSlider
