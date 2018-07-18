@@ -14,7 +14,7 @@ class ContactPage extends React.Component{
                     Contact Us
                 </div>
                 <div id='college-contact'>
-                    
+
                     <Grid container spacing={16} justify='center' >
                         <Grid item xs={6} sm={3}>
                             <CollegeCardView PropertyName='Email' PropertyContent1='cetvm@cet.ac.in' />
@@ -25,7 +25,7 @@ class ContactPage extends React.Component{
                         <Grid item xs={6} sm={3}>
                             <CollegeCardView PropertyName='Phone Number' PropertyContent1='0471-2515556' />
                         </Grid>
-                        
+
                     </Grid>
                     <div id='firstDivider'>
                         <Divider />
@@ -33,10 +33,10 @@ class ContactPage extends React.Component{
                 </div>
 
                 <div id='contact-content'>
-                    <Grid container spacing={16} justify='center'> 
+                    <Grid container spacing={16} justify='center'>
                         <Grid item xs={6} sm={3}>
                             <ContactCardView facultyName='Dr Jiji C V' position='Principal' mobile='0471 2515555' email='hello@cet.ac.in'/>
-                
+
                         </Grid>
                         <Grid item xs={6} sm={3}>
                             <ContactCardView facultyName=' Dr K Krishna Kumar' position='Dean Research' mobile='9447254303' email='hello@cet.ac.in'/>
@@ -107,7 +107,7 @@ class ContactPage extends React.Component{
 
                         </Grid>
 
-      
+
                     </Grid>
                 </div>
                 <style jsx>
@@ -138,24 +138,26 @@ class ContactPage extends React.Component{
 							font-size : 1.5em;
 							background-color : white;
 							color : white;
-                            padding-bottom:20px
+              padding-bottom:20px;
 						}
-                        #college-contact{
-                            grid-row: 2/3;
-                            padding-top :30px;
-                            margin-top:20px;
+
+            #college-contact{
+              grid-row: 2/3;
+              padding-top :30px;
+              margin-top:20px;
+              font-family: 'Roboto', sans-serif;
+            }
+
+            #firstDivider{
+              margin-top :20px;
+            }
+
+            #content-title{
 							font-family: 'Roboto', sans-serif;
-                        }
-                        #firstDivider{
-                            margin-top :20px;
-                            
-                        }
-                        #content-title{
-							font-family: 'Roboto', sans-serif;
-                            font-size:40px;
-                            text-align:center;
-                        }
-					`}   
+              font-size:40px;
+              text-align:center;
+            }
+					`}
                 </style>
             </div>
 

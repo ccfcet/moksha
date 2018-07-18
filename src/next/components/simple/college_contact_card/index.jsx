@@ -11,7 +11,9 @@ const styles = {
     minWidth: 200,
     marginTop:20,
     maxWidth:300,
-    minHeight:150
+    minHeight:150,
+    background: '#194f85'
+
   },
 
   title: {
@@ -36,12 +38,12 @@ function SimpleCard(props) {
     <div>
       <Card className={classes.card}>
         <CardContent >
-    
+
           <Typography className={classes.title} align='center'>
             {props.PropertyName}
           </Typography>
           <Divider/>
-        <div className={classes.content}>  
+        <div className={classes.content}>
           <Typography color='textSecondary'>
             {props.PropertyContent1}
           </Typography>
@@ -54,7 +56,7 @@ function SimpleCard(props) {
           <Typography color='textSecondary'>
             {props.PropertyContent4}
           </Typography>
-        </div>  
+        </div>
         </CardContent>
       </Card>
     </div>

@@ -8,7 +8,8 @@ import Divider from '@material-ui/core/Divider';
 const styles = {
   card: {
     minWidth: 300,
-    marginTop:20
+    marginTop:20,
+    background : '#0d1f3a'
   },
   bullet: {
     display: 'inline-block',
