@@ -39,7 +39,23 @@ class MenuBar extends React.Component {
             #menu-bar-list li a{
               color:#5d5d5d;
               text-decoration: none;
+              display: inline-block;
+              font-size : 1.2em;
             }
+
+            a:after {
+              content: '';
+              width: 0px;
+              height: 1.5px;
+              display: block;
+              background: #5d5d5d;
+              transition: 300ms;
+            }
+
+            a:hover:after {
+              width: 100%;
+            }
+
             `}
           </style>
         </div>
