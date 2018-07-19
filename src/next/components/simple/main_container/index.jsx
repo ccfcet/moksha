@@ -35,7 +35,7 @@ class MainContainer extends React.Component {
                 display: grid;
                 height: 100vh;
                 width: 100vw;
-                grid-template-rows: 1.618033989fr 11.3262379212fr 1fr;
+                grid-template-rows: 1.618033989fr 11.3262379212fr 0.8fr;
                 // grid-template-rows: 1fr 11.3262379212fr 1fr;
               }
 
@@ -43,17 +43,25 @@ class MainContainer extends React.Component {
                 border-bottom: 1px solid #9e9e9e;
                 grid-row-start: 1;
                 grid-row-end: 2;
+                position:fixed;
+                width:100%;
+                top:0;
               }
 
               #content-outer-container {
                 grid-row-start: 2;
                 grid-row-end: 3;
+                margin-top:30px;
+                padding-bottom:50px;
               }
 
               #action-bar-container {
                 border-top: 1px solid #9e9e9e;
                 grid-row-start: 3;
                 grid-row-end: 4;
+                position:fixed;
+                width:100%;
+                bottom:0;
               }
 
               @media screen and (max-height: 479px) {
