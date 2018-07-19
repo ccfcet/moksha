@@ -18,8 +18,8 @@ class MenuBar extends React.Component {
             @import url('https://fonts.googleapis.com/css?family=Raleway');
 
             #menu-bar {
-              margin:0 auto;
-              margin-top:0px;
+              margin: 0 auto;
+              margin-top: 0px;
               text-align:center;
               height: 100%;
             }
@@ -40,8 +40,8 @@ class MenuBar extends React.Component {
               // display: table;
               list-style-type:none;
               // margin: 2px;
-              padding-left:20px;
-              padding-right:20px;
+              padding-left: 20px;
+              padding-right: 20px;
             }
 
             #menu-bar-list li a{
@@ -54,7 +54,7 @@ class MenuBar extends React.Component {
               text-align: center;
               font-weight: 300;
               font-size: 2.6vh;
-              margin-bottom: 0.3vh;
+              margin-bottom: 0.4vh;
             }
             `}
           </style>
