@@ -7,7 +7,7 @@ class HomePage extends React.Component {
   render() {
     return(
       <MainLayout>
-        {/* <HomePageContent /> */}
+        <HomePageContent />
       </MainLayout>
     )
   }

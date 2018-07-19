@@ -10,11 +10,11 @@ class TopBar extends React.Component {
         <div id="brand-bar-container">
           <BrandBar />
         </div>
-        {/* <div id="menu-bar-container">
-          <Headroom>
+        <div id="menu-bar-container">
+          {/* <Headroom> */}
             <MenuBar />
-          </Headroom>
-        </div> */}
+          {/* </Headroom> */}
+        </div>
         <style jsx>
           {`
             #top-bar {
@@ -29,6 +29,7 @@ class TopBar extends React.Component {
               grid-row-end: 2;
               display: grid;
               grid-template-rows: 0.5fr 1.61803398875fr 0.5fr;
+              border-bottom: 1px solid #9e9e9e;
             }
 
             #menu-bar-container {

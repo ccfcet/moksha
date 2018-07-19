@@ -21,17 +21,25 @@ class MenuBar extends React.Component {
               margin:0 auto;
               margin-top:0px;
               text-align:center;
+              height: 100%;
             }
 
             #menu-bar-list {
+              display: table;
+              margin: auto;
               padding-left:10px;
               padding-right:10px;
+              height: 100%;
             }
 
             #menu-bar-list li {
-              display:inline;
+              display: table-cell;
+              vertical-align: middle;
+              // height: 100%;
+              // display: inline-block;
+              // display: table;
               list-style-type:none;
-              margin: 2px;
+              // margin: 2px;
               padding-left:20px;
               padding-right:20px;
             }
@@ -40,22 +48,14 @@ class MenuBar extends React.Component {
               color:#5d5d5d;
               text-decoration: none;
               display: inline-block;
-              font-size : 1.2em;
+              // display: table-cell;
+              // vertical-align: middle;
+              font-family: 'Open Sans',sans-serif;
+              text-align: center;
+              font-weight: 300;
+              font-size: 2.6vh;
+              margin-bottom: 0.3vh;
             }
-
-            a:after {
-              content: '';
-              width: 0px;
-              height: 1.5px;
-              display: block;
-              background: #5d5d5d;
-              transition: 300ms;
-            }
-
-            a:hover:after {
-              width: 100%;
-            }
-
             `}
           </style>
         </div>
