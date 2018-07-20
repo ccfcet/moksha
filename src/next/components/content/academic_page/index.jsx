@@ -26,7 +26,7 @@ class departmentPage extends React.Component{
                     height : 100%;
                     padding-top : 50px;
                     text-align : center;
-                    background-color : #0089ff;
+                    background-color : #0000e8;
                     font-size : 50px;
                     color : white;
                     padding-bottom: 50px;
