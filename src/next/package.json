@@ -17,6 +17,7 @@
     "react-animated-slider": "^1.1.2",
     "react-dom": "^16.4.1",
     "react-headroom": "^2.2.2",
+    "react-responsive-navbar": "^1.0.11",
     "reactstrap": "^6.3.0"
   }
 }

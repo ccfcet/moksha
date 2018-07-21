@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.large-menu #menu-bar {
+  margin: 0 auto;
+  text-align:center;
+  height: 100%;
+}
+
+.large-menu #menu-bar ul {
+  display: table;
+  margin: auto;
+  padding-left:10px;
+  padding-right:10px;
+  height: 100%;
+}
+
+.large-menu ul li {
+  display: table-cell;
+  vertical-align: middle;
+  // height: 100%;
+  // display: inline-block;
+  // display: table;
+  list-style-type:none;
+  // margin: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.large-menu ul li a {
+  color:#5d5d5d;
+  text-decoration: none;
+  display: inline-block;
+  // display: table-cell;
+  // vertical-align: middle;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  font-size: 2.6vh;
+  margin-bottom: 0.0vh;
+}
+
+.small-menu #menu-bar {
+  margin: 4px auto 0px auto;
+  text-align:center;
+  background: #ffffff;
+  z-index: 999;
+}
+
+.small-menu #menu-bar ul {
+  display: table;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.small-menu ul li {
+  vertical-align: middle;
+  // height: 100%;
+  // display: inline-block;
+  // display: table;
+  list-style-type:none;
+  // margin: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #cecece;
+  width: 100%;
+}
+
+.small-menu ul li a {
+  color:#5d5d5d;
+  text-decoration: none;
+  // display: table-cell;
+  // vertical-align: middle;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  font-size: 2.6vh;
+  margin-bottom: 0.0vh;
+}
