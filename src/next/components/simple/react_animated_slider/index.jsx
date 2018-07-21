@@ -18,7 +18,6 @@ const content = [
 class ReactAnimatedSlider extends React.Component {
   render() {
     return(
-
       <div id="react-animated-slider-container">
         <Container style={{height: '100%'}} fluid={true}>
           <Row style={{height: '100%'}}>

@@ -4,59 +4,40 @@ import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import CardMedia from '@material-ui/core/CardMedia';
 import Divider from '@material-ui/core/Divider';
 // import PhoneIcon from '@material-ui/icons/PermPhoneMsg'
 const styles = {
   card: {
-    minWidth: 200,
-    marginTop:20,
-    maxWidth:300,
+    maxWidth: 325,
     minHeight:150,
-    background: '#194f85'
-
+    width: '100%',
   },
-
+  media: {
+    height: 128,
+    paddingTop: '50%', // 16:9
+    backgroundSize: 'contain'
+  },
   title: {
-    marginTop:20,
-    marginBottom: 5,
+    marginTop: 5,
+    marginBottom: 15,
     fontSize: 20,
   },
-  pos: {
-    marginBottom: 12,
-  },
-  content:{
-      marginTop:15,
-      fontSize: 15,
-
-  }
 };
 
 function SimpleCard(props) {
   const { classes } = props;
-
   return (
     <div>
       <Card className={classes.card}>
+        <CardMedia className={classes.media} title={props.title} image={props.image} />
         <CardContent >
-
           <Typography className={classes.title} align='center'>
-            {props.PropertyName}
+            {props.activityName}
           </Typography>
-          <Divider/>
-        <div className={classes.content}>
-          <Typography color='textSecondary'>
-            {props.PropertyContent1}
+          <Typography component="p">
+            {props.activityDescription}
           </Typography>
-          <Typography color='textSecondary'>
-            {props.PropertyContent2}
-          </Typography>
-          <Typography color='textSecondary'>
-            {props.PropertyContent3}
-          </Typography>
-          <Typography color='textSecondary'>
-            {props.PropertyContent4}
-          </Typography>
-        </div>
         </CardContent>
       </Card>
     </div>
@@ -66,4 +47,5 @@ function SimpleCard(props) {
 SimpleCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
+
 export default withStyles(styles)(SimpleCard);
