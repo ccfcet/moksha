@@ -1,28 +1,41 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 import DepartmentCard from '../../simple/department_cards'
+import {Container,Row,Col} from 'reactstrap'
 class departmentPage extends React.Component{
     render(){
         return(
-            <div id='department-page'>
-              <div id='department-page-title'>
-                    Academics
-              </div>
-              <div id='department-page-content'>
-                <Grid container spacing={32} justify='center' id='row'>
-                  <Grid item xs={6} sm={3} >
-                    <DepartmentCard departmentName='Undergraduate Studies' image='/static/icons/ug.png' departmentURL='/ug'/>
-                  </Grid>
-                  <Grid item xs={6} sm={3}>
-                    <DepartmentCard departmentName='Postgraduate Studies' image='/static/icons/pg.png' departmentURL='/pg'/>
-                  </Grid>
-                </Grid>
-              </div>
+            <div style={{height:'100%'}}>
+              <Container fluid={true}>
+                <Row>
+                  <Col>
+                    <div id='department-page-title'>
+                      Academics
+                    </div>
+                  </Col>  
+                </Row>
+                  <div id='department-page-content'>
+                  <Row>
+                    
+                
+                      <Col sm={{ size: 'auto', offset: 2}} >
+                        
+                            <DepartmentCard departmentName='Undergraduate Studies' image='/static/icons/ug.png' departmentURL='/ug'/>
+                        
+                      </Col>
+                      <Col sm={{ size: 'auto', offset: 2 }}>    
+                        
+                            <DepartmentCard departmentName='Postgraduate Studies' image='/static/icons/pg.png' departmentURL='/pg'/>
+                        
+                      </Col>    
+                
+              </Row>    
+
+                </div>
 
               <style jsx>
                 {`
                   #department-page-title {
-                    grid-row : 1/2;
                     height : 100%;
                     padding-top : 50px;
                     text-align : center;
@@ -30,6 +43,7 @@ class departmentPage extends React.Component{
                     font-size : 50px;
                     color : white;
                     padding-bottom: 50px;
+                    width:100%;
                   }
 
                   #department-page-content {
@@ -42,6 +56,7 @@ class departmentPage extends React.Component{
                   }
                 `}
               </style>
+              </Container>
             </div>
        )
      }
