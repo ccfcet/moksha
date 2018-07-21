@@ -1,5 +1,7 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class MainContainer extends React.Component {
   render() {
     return(
@@ -14,7 +16,7 @@ class MainContainer extends React.Component {
               margin: 0;
               padding: 0;
               font-family: 'Open Sans', sans-serif;
-              font-weight: 400;
+              font-weight: 300;
               color: #5d5d5d;
             }
 
@@ -47,6 +49,7 @@ class MainContainer extends React.Component {
                 position: fixed;
                 width:100%;
                 top:0;
+                z-index: 999;
               }
 
               #content-outer-container {
