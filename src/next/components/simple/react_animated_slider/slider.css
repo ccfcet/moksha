@@ -51,6 +51,27 @@
   line-height: 1.5;
   margin: 20px auto 30px;
   max-width: 640px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-content .inner h1 {
+    font-weight: 900;
+    margin: 0 auto;
+    max-width: 840px;
+    color: #fafafa;
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .slider-content .inner p {
+    color: #fafafa;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px auto 30px;
+    max-width: 640px;
+    font-weight: 400;
+  }
 }
 
 .slider-content button {
