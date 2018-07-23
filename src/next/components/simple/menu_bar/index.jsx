@@ -104,12 +104,40 @@ class MenuBar extends React.Component {
                         <li><MaterialSimpleMenu menuTitle="Facilities"
                           menuElements={[
                             {
-                              "name": "Programmes",
-                              "url": "academics/programmes"
+                              "name": "Bosch Rexroth",
+                              "url": "academics/bosch_rexroth"
                             },
                             {
-                              "name": "People",
+                              "name": "Hostel",
+                              "url": "academics/hostel"
+                            },
+                            {
+                              "name": "Placement Cell(CGPU)",
+                              "url": "academics/cgpu"
+                            },
+                            {
+                              "name": "Central Computing Facility(CCF)",
+                              "url": "academics/ccf"
+                            },
+                            {
+                              "name": "Centre for Continuing Education(CCE)",
+                              "url": "academics/cce"
+                            },
+                            {
+                              "name": "Refrigerator & AC Maintenance Unit",
                               "url": "academics/people"
+                            },
+                            {
+                              "name": "Guest House",
+                              "url": "academics/people"
+                            },
+                            {
+                              "name": "Technical Library",
+                              "url": "academics/technical_library"
+                            },
+                            {
+                              "name": "Research Programmes",
+                              "url": "academics/research_programmes"
                             },
                           ]}/></li>
                           <li><a href="/search">Search</a></li>
