@@ -140,6 +140,21 @@ class MenuBar extends React.Component {
                               "url": "academics/research_programmes"
                             },
                           ]}/></li>
+                          <li><MaterialSimpleMenu menuTitle="More"
+                          menuElements={[
+                            {
+                              "name":"Events",
+                              "url":"more/events"
+                            },
+                            {
+                              "name":"News",
+                              "url":"more/news"
+                            },
+                            {
+                              "name":"Tenders",
+                              "url":"more/tenders"
+                            }
+                          ]}/></li>
                           <li><a href="/search">Search</a></li>
                         </ul>
                       </div>
