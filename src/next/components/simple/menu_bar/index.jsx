@@ -43,20 +43,40 @@ class MenuBar extends React.Component {
                   <li><MaterialSimpleMenu menuTitle="Departments"
                     menuElements={[
                       {
-                        "name": "Civil Engineering",
-                        "url": "department/civil_engineering"
-                      },
-                      {
                         "name": "Mechanical Engineering",
                         "url": "department/mechanical_engineering"
                       },
                       {
-                        "name": "Electrical and Electronics Engineering",
+                        "name": "Civil Engineering",
                         "url": "department/civil_engineering"
                       },
                       {
+                        "name": "Electrical and Electronics Engineering",
+                        "url": "department/electrical_electronics_engineering"
+                      },
+                      {
                         "name": "Electronics and Communication Engineering",
-                        "url": "department/civil_engineering"
+                        "url": "department/electronics_communication"
+                      },
+                      {
+                        "name": "Computer Science Engineering",
+                        "url": "department/computerscience_engineering"
+                      },
+                      {
+                        "name": "Architecture Engineering",
+                        "url": "department/architecture_engineering"
+                      },
+                      {
+                        "name": "Master of Computer Applications",
+                        "url": "department/mca"
+                      },
+                      {
+                        "name": "Business",
+                        "url": "department/business"
+                      },
+                      {
+                        "name": "Physical Education",
+                        "url": "department/physical_education"
                       },
                     ]}/></li>
                     <li><MaterialSimpleMenu menuTitle="Activities"
