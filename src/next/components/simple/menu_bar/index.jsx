@@ -44,39 +44,39 @@ class MenuBar extends React.Component {
                     menuElements={[
                       {
                         "name": "Mechanical Engineering",
-                        "url": "department/mechanical_engineering"
+                        "url": "http://me.cet.ac.in/"
                       },
                       {
                         "name": "Civil Engineering",
-                        "url": "department/civil_engineering"
+                        "url": "http://cet.ac.in/index.php?option=com_content&view=article&id=118&Itemid=130"
                       },
                       {
                         "name": "Electrical and Electronics Engineering",
-                        "url": "department/electrical_electronics_engineering"
+                        "url": "http://ee.cet.ac.in/"
                       },
                       {
                         "name": "Electronics and Communication Engineering",
-                        "url": "department/electronics_communication"
+                        "url": "http://ece.cet.ac.in/"
                       },
                       {
-                        "name": "Computer Science Engineering",
-                        "url": "department/computerscience_engineering"
+                        "name": "Computer Science Engineering (alpha)",
+                        "url": "https://cse.cet.ac.in/"
                       },
                       {
                         "name": "Architecture Engineering",
-                        "url": "department/architecture_engineering"
+                        "url": "http://ar.cet.ac.in"
                       },
                       {
                         "name": "Master of Computer Applications",
-                        "url": "department/mca"
+                        "url": "https://ca.cet.ac.in/"
                       },
                       {
                         "name": "Business",
-                        "url": "department/business"
+                        "url": "http://www.mba.cet.ac.in/"
                       },
                       {
                         "name": "Physical Education",
-                        "url": "department/physical_education"
+                        "url": "http://www.cet.ac.in/index.php?option=com_content&view=category&layout=blog&id=93&Itemid=424"
                       },
                     ]}/></li>
                     <li><MaterialSimpleMenu menuTitle="Activities"
