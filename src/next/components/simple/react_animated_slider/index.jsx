@@ -20,6 +20,16 @@ const content = [
     'The 16th International Conference on Control, Communication and Computing (IC4 2018) offers a platform for researchers, practitioners, manufacturers and academicians to discuss the ongoing research  across the world  and help exchange  ideas in addressing work related issues faced by human beings in all facets of daily activities.',
     button: 'Discover',
     image: './static/images/hwwe_2018.jpg',
+  },
+  {
+    id: 3,
+    title: 'AJWTF 7',
+    description:
+    'The 7th Asian Joint Workshop on Thermophysics and Fluid Science' + 
+    ' organised by Department of Mechanical Engineering, College of '+ 
+    'Engineering Trivandrum',
+    button: 'Discover',
+    image: './static/images/hwwe_2018.jpg',
   }
 ];
 
@@ -32,7 +42,7 @@ class ReactAnimatedSlider extends React.Component {
             <Col style={{paddingLeft: '0px', paddingRight: '0px'}}>
               <Slider
                 infinite="true"
-                autoplay="4000"
+                autoplay="3000"
                 // previousButton={null}
                 // nextButton={null}
                 >
