@@ -81,6 +81,17 @@ class MainContainer extends React.Component {
               `}
             </style>
             <div id="top-bar-container">
+              <noscript>
+                <span style={{background: '#ff4848', display: 'flex'}}>
+                  <p style={{textAlign: 'center', marginTop: '10px',
+                    marginBottom: '9px', color: '#ffffff', marginLeft: 'auto',
+                    marginRight: 'auto'}}>
+                    For full functionality of this site it is necessary to enable JavaScript.
+                    Here are the <a style={{color: '#ffffff', textDecoration: 'underline'}} href="https://www.enable-javascript.com/" target="_blank">
+                    instructions on how to enable JavaScript in your web browser</a>.
+                  </p>
+                </span>
+              </noscript>
               {this.props.topBar}
             </div>
             <div id="content-outer-container">
