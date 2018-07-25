@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../../simple/college_contact_card'
 import Grid from '@material-ui/core/Grid'
 import {Container,Row,Col} from 'reactstrap'
-
+ 
 const activities = [
   {
     "activityName": "IEEE",
