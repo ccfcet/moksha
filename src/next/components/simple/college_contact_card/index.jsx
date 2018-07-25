@@ -9,14 +9,14 @@ import Divider from '@material-ui/core/Divider';
 // import PhoneIcon from '@material-ui/icons/PermPhoneMsg'
 const styles = {
   card: {
-    width : '75%',
+    width : '100%',
     height : 500,
-    marginTop: 10,
+    marginTop: '5%',
     // justify : 'center',
 
   },
   media: {
-    height: 128,
+    // height: 128,
     paddingTop: '50%',
     backgroundSize: 'contain',
   },

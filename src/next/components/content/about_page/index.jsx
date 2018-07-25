@@ -4,55 +4,49 @@ import { Container, Row, Col } from 'reactstrap';
 class AboutPageContent extends React.Component {
 	render() {
 		return(
-			<div style={{background: '#0089ff', height: '100%'}}>
-				<Container fluid={ true }>
+			<div style={{height: '100%', color:'#5d5d5d'}}>
+				<h1>
+					About CET
+				</h1>
+				<h3 style={{paddingBottom:'1%'}}>
+					A place for learning, discovery, innovation, expression and discourse
+				</h3>
+				<Container fluid={true}>
 					<Row>
-						<Col>
-							<div id="head">
-								About Us
+
+						<Col sm="8" style={{ borderRight:' 3px solid blue',margin : 10, background :'white'}}>
+							<p id="about-content">
+								<h3>The Beginning</h3>
+								The College of Engineering, Trivandrum was established in 1939 as the first Engineering College in the then Travancore State. The first classes were started on 3rd July 1939 during the reign of the Travancore King, Sri Chithira Thirunal Balarama Varma and as the head of the then Travancore state he deserves his share of credit in the establishment of the college. Initially the College was housed in the former office and bungalow of the Chief Engineer (present PMG Office). Maj T.H. Mathewman, a Britisher was the first Principal. Started as a constituent College of Travancore University, the College had an initial intake of 21 students each for Degree and Diploma courses in Civil, Mechanical and Electrical branches. With the establishment of the Directorate of Technical Education in the late fifties, the College administration came under the control of the Government of Kerala. The College was shifted to the present sprawling 125 acres in 1980.
+
+						</p>
+						</Col>
+
+						<Col style={{paddingTop:30}}>
+							<div style={{paddingTop:30, paddingBottom :30}}>
+								<h3>Mission</h3>
+								<blockquote style={{ background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
+									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
+										National Level Excellence and International Visibility in every facet of Engineering Education.
+									</p>
+								</blockquote>
+							</div>
+							<div id="mis-div">
+								<h3>Vision</h3>
+								<blockquote style={{background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
+									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
+										To facilitate Quality Engineering Education to Equip and Enrich Young Men and Women to Meet Global challenges in Development, Innovation and Application of Technology in the service of Humanity.
+									</p>
+								</blockquote>
 							</div>
 						</Col>
 					</Row>
-					<Row>
-						<Col>
-							<div id="about-content">
-								The College of Engineering, Trivandrum was established in 1939 as the first
-								Engineering College in the then Travancore State. The first classes were started
-								on 3rd July 1939 during the reign of the Travancore King, Sri Chithira Thirunal
-								Balarama Varma and as the head of the then Travancore state he deserves his
-								share of credit in the establishment of the college. Initially the College was
-								housed in the former office and bungalow of the Chief Engineer (present PMG
-									Office). Maj T.H. Mathewman, a Britisher was the first Principal. Started as a
-									constituent College of Travancore University, the College had an initial intake
-									of 21 students each for Degree and Diploma courses in Civil, Mechanical and
-									Electrical branches. With the establishment of the Directorate of Technical
-									Education in the late fifties, the College administration came under the control
-									of the Government of Kerala. The College was shifted to the present sprawling
-									125 acres in 1980.
-								</div>
-							</Col>
-						</Row>
-						<Row style={{background: '#40acf9', color: '#fafafa', fontSize: '1.3em', fontFamily: '\'Open Sans\',sans-serif', fontWeight: '300'}}>
-							<Col>
-								<div class="inner-column" style={{paddingBottom: '25px'}}>
-									<h2 style={{fontWeight: '300', paddingTop: '25px', paddingBottom: '10px'}}>Mission</h2>
-									To facilitate Quality Engineering Education to Equip and Enrich
-									Young Men and Women to Meet Global Challenges in Development,
-									Innovation and Application of Technology in the Service of Humanity
-								</div>
-							</Col>
-							<Col>
-								<div class="inner-column" style={{paddingBottom: '25px'}}>
-									<h2 style={{fontWeight: '300', paddingTop: '25px', paddingBottom: '10px'}}>Vision</h2>
-									National Level Excellence and International Visibility in Every
-									facet of Engineering Education.
-								</div>
-							</Col>
-						</Row>
-					</Container>
+
+				</Container>
 					<style jsx>
 						{`
 							@import url('https://fonts.googleapis.com/css?family=Roboto');
+							@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 							#about-page-head {
 								width : 100%;
@@ -72,13 +66,38 @@ class AboutPageContent extends React.Component {
 							}
 
 							#about-content {
-								font-family: 'Open Sans',sans-serif;
-								font-weight: 300;
-								font-size : 1.3em;
-								background-color : #0089ff;
-								color : white;
-								padding-bottom: 100px;
+			 					padding-left : 20px;
+								font-size : 1.6em;
+								padding-top : 8%;
+								padding-right : 10px;
+								font-weight : 300px;
+								font-family : 'Lato', sans-serif;
 							}
+
+							h1 {
+								text-align : center;
+								font-family : 'Open Sans',sans-serif;
+								@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600i');
+								padding-top : 1%;
+								padding-bottom : 1%;
+
+							}
+
+							h3 {
+								text-align : center;
+								font-family : 'Open Sans',sans-serif;
+								font-weight : 500;
+							}
+
+							#mis-div {
+								border-top : 3px solid blue;
+									padding-top : 20px;
+									padding-bottom : 20px;
+							}
+
+							@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
 							`}
 						</style>
 					</div>

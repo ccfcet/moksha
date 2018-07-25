@@ -18,6 +18,7 @@ class MainContainer extends React.Component {
               font-family: 'Open Sans', sans-serif;
               font-weight: 300;
               color: #5d5d5d;
+              overflow-x : hidden;
             }
 
             ::-moz-selection { /* Code for Firefox */

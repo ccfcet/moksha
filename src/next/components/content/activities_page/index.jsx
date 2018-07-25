@@ -17,10 +17,10 @@ const activities = [
     "title": "ISTE Logo"
   },
   {
-    "activityName": "ENCRESE",
-    "image": "../../../static/images/encrese.jpg",
-    "activityDescription": "ENCRESE stands for Engineers’ Crew for Society and Environment. It is a collective formed by students of CET who were brought to gether by National Service Scheme (NSS) unit at the college.The forum mainly focuses on improving skill and knowledge of engineering students through finding solutions to real-time problems suffered by society and major threats to the environment.",
-    "title": "ENCRESE Logo"
+    "activityName": "NSS",
+    "image": "../../../static/images/nss.jpg",
+    "activityDescription": "NSS Technical cell unit no.147 of this college originally under University of Kerala, is at present functioning under the Directorate of Technical Education. From 2015 NSS Technical cell has granted anther NSS unit (Unit no 261). The various activities of the unit include blood donation, planting of trees, conducting legal awareness classes, personality development programmes, surveys for adopted village, cleaning and other constructive activities.",
+    "title": "NSS Logo"
   },
   {
     "activityName": "BAJA - Herakles",
@@ -29,16 +29,16 @@ const activities = [
     "title": "BAJA Logo"
   },
   {
-    "activityName": "IPR Cell",
-    "image": "../../../static/images/ipr.png",
-    "activityDescription": "IPR cell is functioning in the College (In the main building near the Hostel Office, Room No. 101) from July 2010 onwards. As per the Proceedings No. L4/19813/10/DTE Thiruvananthapuram dated 26/05/2010, The IPR cell is supported by Patent Information centre (PIC) – Kerala, Kerala State Council for Science, Technology & Environment (KSCSTE), Govt. of Kerala. Dr Anjan R Nair, Assistant Professor, Department of Mechanical Engineering is the coordinator of the IPR cell.",
-    "title": "IPR Logo"
-  },
-  {
     "activityName": "ISNT",
     "image": "../../../static/images/isnt.png",
     "activityDescription": "The ISNT student chapter at CET was formally inaugurated by Dr. J. David, Principal of CET, on the 17th of August, 2017, in the presence of Sri. G. Levin, chairman of ISNT Trivandrum Chapter and other executive members of ISNT Trivandrum Chapter. With joint collaboration between Civil and Mechanical departments of the college, various programmes have been conducted under the banner of ISNT.",
     "title": "INST Logo"
+  },
+  {
+    "activityName": "IPR Cell",
+    "image": "../../../static/images/ipr.png",
+    "activityDescription": "IPR cell is functioning in the College (In the main building near the Hostel Office, Room No. 101) from July 2010 onwards. As per the Proceedings No. L4/19813/10/DTE Thiruvananthapuram dated 26/05/2010, The IPR cell is supported by Patent Information centre (PIC) – Kerala, Kerala State Council for Science, Technology & Environment (KSCSTE), Govt. of Kerala. Dr Anjan R Nair, Assistant Professor, Department of Mechanical Engineering is the coordinator of the IPR cell.",
+    "title": "IPR Logo"
   },
   {
     "activityName": "Environmental Club",
@@ -46,6 +46,13 @@ const activities = [
     "activityDescription": "The Environmental Club has done excellent work in nature conservation activities at College of Engineering, Trivandrum. The club mainly concentrates on enhancing the Greenery and conserving and documenting the bio-diversity of the campus. ",
     "title": "Environmental club Logo"
   },
+  {
+    "activityName": "ENCRESE",
+    "image": "../../../static/images/encrese.jpg",
+    "activityDescription": "ENCRESE stands for Engineers’ Crew for Society and Environment. It is a collective formed by students of CET who were brought to gether by National Service Scheme (NSS) unit at the college.The forum mainly focuses on improving skill and knowledge of engineering students through finding solutions to real-time problems suffered by society and major threats to the environment.",
+    "title": "ENCRESE Logo"
+  },
+
   {
     "activityName": "IIPC",
     "image": "../../../static/images/iipc.jpg",
@@ -63,12 +70,6 @@ const activities = [
     "image": "",
     "activityDescription": "Kerala Education Grid (KEG) project of the Department of Higher Education, Govt. of Kerala, has its operations centre located at IIITM-K, Park Centre, Technopark Campus. College of Engineering, Trivandrum is one of the Resource Centers (EGRC - CET) of the Education Grid Project.",
     "title": "KEG Logo"
-  },
-  {
-    "activityName": "NSS",
-    "image": "../../../static/images/nss.jpg",
-    "activityDescription": "NSS Technical cell unit no.147 of this college originally under University of Kerala, is at present functioning under the Directorate of Technical Education. From 2015 NSS Technical cell has granted anther NSS unit (Unit no 261). The various activities of the unit include blood donation, planting of trees, conducting legal awareness classes, personality development programmes, surveys for adopted village, cleaning and other constructive activities.",
-    "title": "NSS Logo"
   },
   {
     "activityName": "EGRC - CET",
