@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -42,11 +43,11 @@ class SimpleMenu extends React.Component {
             onClose={this.handleClose}
             >
               {this.props.menuElements.map(menuElement => (
-                <a href={menuElement.url}>
+                <Link href={menuElement.url}>
                   <MenuItem>
                     {menuElement.name}
                   </MenuItem>
-                </a>
+                </Link>
               ))}
             </Menu>
           </div>
