@@ -1,0 +1,21 @@
+# API Connection Checklist
+- [ ] College name
+- [ ] Menu
+- [ ] Events
+- [ ] News
+- [ ] Academics
+  - [ ] Streams
+  - [ ] Courses
+- [ ] EntityInformation - College
+  - [ ] Admissions
+  - [ ] Departments
+  - [ ] Research
+  - [ ] Campus Life
+  - [ ] College Union
+  - [ ] Clubs
+  - [ ] Separate Entity for Facilities
+  - [ ] About College
+- [ ] Admininstration
+  - [ ] Entity People Association Entity Roles Association
+- [ ] Karma Version API
+- [ ] Search API
