@@ -8,6 +8,9 @@ import Divider from '@material-ui/core/Divider';
 
 const styles = {
   card: {
+    width: '40vw',
+    borderTop: '5px #0000e8 solid',
+    marginTop: 10,
     minWidth: 275,
   },
   bullet: {
@@ -23,8 +26,9 @@ const styles = {
     marginBottom: 12,
   },
   listitem: {
-    marginTop:10,
-    marginBottom:10,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 15,
   }
 };
 
@@ -36,32 +40,44 @@ function SimpleCard(props) {
     <div>
       <Card className={classes.card}>
         <CardContent>
-          <div className={classes.listitem}>
-          <Typography variant="subheading" component="h2">
-          <a href="/" >Office of the Principal</a>
-          </Typography>
+          <div id="card-content-container">
+            <div className={classes.listitem}>
+              <Typography variant="subheading" component="h2">
+                <a href="/" >Office of the Principal</a>
+              </Typography>
+            </div>
+
+            <Divider />
+            <div className={classes.listitem}>
+              <Typography variant="subheading" component="h2">
+                <a href="/" >Office of the UG Dean</a>
+              </Typography>
+            </div>
+            <Divider />
+            <div className={classes.listitem}>
+              <Typography variant="subheading" component="h2">
+                <a href="/" >Office of the PG Dean</a>
+              </Typography>
+            </div>
+            <Divider />
+            <div className={classes.listitem}>
+              <Typography variant="subheading" component="h2">
+                <a href="/" >Office of the Research Dean</a>
+              </Typography>
+            </div>
           </div>
 
-          <Divider />
-          <div className={classes.listitem}>
-          <Typography variant="subheading" component="h2">
-          <a href="/" >Office of the Undergraduate Dean</a>
-          </Typography>
-          </div>
-          <Divider />
-          <div className={classes.listitem}>
-          <Typography variant="subheading" component="h2">
-          <a href="/" >Office of the Postgraduate Dean</a>
-          </Typography>
-          </div>
-          <Divider />
-          <div className={classes.listitem}>
-          <Typography variant="subheading" component="h2">
-          <a href="/" >Office of the Research Dean</a>
-          </Typography>
-          </div>
         </CardContent>
       </Card>
+      <style jsx>
+      {`
+      #card-content-container {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+      `}
+      </style>
     </div>
   );
 }
