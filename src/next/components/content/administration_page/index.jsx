@@ -1,7 +1,9 @@
 import React from 'react'
-import PeopleCard from '../../simple/administration/cards/people_card'
 import Grid from '@material-ui/core/Grid';
-// import Paper from '@material-ui/core/Paper';
+
+import PeopleCard from '../../simple/administration/cards/people_card'
+import OfficesCard from '../../simple/administration/cards/offices_card'
+import RTICard from '../../simple/administration/cards/rti'
 
 class AdministrationPage extends React.Component {
     render() {
@@ -26,9 +28,10 @@ class AdministrationPage extends React.Component {
                         </Grid>
                         <Grid item xs={12}>
                             <Grid container justify="center">
-                                <div id="governance-text">
-                                    College of Engineering Trivandrum is led by the
-                                    Principal, Deans and the College Council.
+                                <div id="small-description">
+                                    College of Engineering Trivandrum is led by
+                                    the Principal, Deans and the College
+                                    Council.
                              </div>
                             </Grid>
                         </Grid>
@@ -38,23 +41,74 @@ class AdministrationPage extends React.Component {
                             </Grid>
                         </Grid>
 
+
+                        <Grid item xs={12}>
+                            <Grid container justify="center">
+                                <div id="subheading">
+                                    Administrative Offices
+                             </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container>
+                                <div id="small-description">
+                                    College of Engineering Trivandrum's
+                                    administrative offices are essential to
+                                    supporting the operations and mission of the
+                                    college. They deal with a diverse range of
+                                    issues including human resources, financial
+                                    activities, research administration and
+                                    student affairs.
+                             </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container justify="center">
+                                <OfficesCard />
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container justify="center">
+                                <div id="subheading">
+                                    Right to Information
+                             </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container>
+                                <div id="small-description">
+                                </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Grid container justify="center">
+                                <RTICard />
+                            </Grid>
+                        </Grid>
+
                     </Grid>
                 </div>
                 <style jsx> {`
 
                 #administration-container-paper {
-                    margin-left: 10vw;
-                    margin-right: 10vw;
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                    margin-bottom: 2vh;
                 }
 
                 #heading {
                     font-family: 'Open Sans',sans-serif;
-                    font-weight: 300;
+                    font-weight: 400;
                     height : 100%;
                     padding-top : 5px;
                     padding-bottom : 5px;
                     text-align : center;
-                    font-size : 3em;
+                    font-size : 2.5em;
                     color : black;
                 }
 
@@ -69,14 +123,14 @@ class AdministrationPage extends React.Component {
                     color : black;
                 }
 
-                #governance-text {
+                #small-description {
                     font-family: 'Open Sans',sans-serif;
                     font-weight: 300;
                     height : 100%;
                     padding-top : 5px;
                     padding-bottom : 5px;
-                    text-align : center;
-                    font-size : 1.2em;
+                    // text-align : center;
+                    font-size : 1.1em;
                     color : black;
                     opacity: 0.87;
                 }
