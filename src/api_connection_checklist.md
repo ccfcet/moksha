@@ -1,5 +1,5 @@
 # API Connection Checklist
-- [ ] College name
+- [x] College name
 - [ ] Menu
 - [ ] Events
 - [ ] News
