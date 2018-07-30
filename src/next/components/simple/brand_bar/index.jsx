@@ -8,7 +8,7 @@ class BrandBar extends React.Component {
         <div id="brand-bar-element">
           <Link href="/">
           <h1 id="college-name">
-            College of Engineering Trivandrum
+            {this.props.brandBar.collegeName}
           </h1>
         </Link>
       </div>

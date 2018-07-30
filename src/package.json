@@ -26,6 +26,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "helmet": "^3.12.1",
+    "isomorphic-unfetch": "^2.1.0",
     "moksha-next": "file:./next",
     "morgan": "~1.9.0"
   },

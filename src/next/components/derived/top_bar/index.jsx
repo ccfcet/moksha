@@ -8,7 +8,7 @@ class TopBar extends React.Component {
     return (
       <div id="top-bar">
         <div id="brand-bar-container">
-          <BrandBar />
+          <BrandBar brandBar={this.props.topBar.brandBar}/>
         </div>
         <div id="menu-bar-container">
           {/* <Headroom> */}

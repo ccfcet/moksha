@@ -10,7 +10,7 @@ class MainLayout extends React.Component {
   render() {
     return (
       <MainContainer
-        topBar={<TopBar />}
+        topBar={<TopBar topBar={this.props.mainLayout.topBar}/>}
         content={this.props.children}
         actionBar={<ActionBar actions={actions} />} />
       );
