@@ -1,6 +1,6 @@
 # API Connection Checklist
 - [x] College name
-- [ ] Menu
+- [x] Menu
 - [ ] Events
 - [ ] News
 - [ ] Academics

@@ -43,9 +43,9 @@ class SimpleMenu extends React.Component {
             onClose={this.handleClose}
             >
               {this.props.menuElements.map(menuElement => (
-                <Link href={menuElement.url}>
+                <Link href={menuElement.item_url}>
                   <MenuItem>
-                    {menuElement.name}
+                    {menuElement.item_name}
                   </MenuItem>
                 </Link>
               ))}
