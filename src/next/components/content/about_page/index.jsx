@@ -17,8 +17,7 @@ class AboutPageContent extends React.Component {
 						<Col sm="8" style={{ borderRight:' 3px solid blue',margin : 10, background :'white'}}>
 							<p id="about-content">
 								<h3>The Beginning</h3>
-								The College of Engineering, Trivandrum was established in 1939 as the first Engineering College in the then Travancore State. The first classes were started on 3rd July 1939 during the reign of the Travancore King, Sri Chithira Thirunal Balarama Varma and as the head of the then Travancore state he deserves his share of credit in the establishment of the college. Initially the College was housed in the former office and bungalow of the Chief Engineer (present PMG Office). Maj T.H. Mathewman, a Britisher was the first Principal. Started as a constituent College of Travancore University, the College had an initial intake of 21 students each for Degree and Diploma courses in Civil, Mechanical and Electrical branches. With the establishment of the Directorate of Technical Education in the late fifties, the College administration came under the control of the Government of Kerala. The College was shifted to the present sprawling 125 acres in 1980.
-
+									{this.props.aboutData.about}
 						</p>
 						</Col>
 

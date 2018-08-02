@@ -1,4 +1,5 @@
 import React from 'react'
+
 import MainLayout from '../../components/derived/main_layout'
 import Administration from '../../components/content/administration_page'
 
