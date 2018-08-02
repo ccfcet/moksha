@@ -1,21 +1,20 @@
-import React from 'react';
+import React from 'react'
+import Department from '../../components/content/department_page'
+import MainLayout from '../../components/derived/main_layout'
+// import {withStyles} from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import fetch from 'isomorphic-unfetch';
+import config from '../../config.json';
 
-import HomePageContent from '../components/content/home_page';
-import MainLayout from '../components/derived/main_layout';
-
-import config from '../config.json';
-
-class HomePage extends React.Component {
+class department extends React.Component {
   static async getInitialProps() {
     let data = {}
     let res;
 
-    res = await fetch(config.apiLocation + '/public/information/entity_name/' +
-    config.slug)
+    res = await fetch(config.apiLocation + '/public/information/entity_name/cet')
     data['collegeName'] = await res.json()
 
-    res = await fetch(config.apiLocation + '/public/menu/' + config.slug + '/1')
+    res = await fetch(config.apiLocation + '/public/menu/cet/1')
     data['menu'] = await res.json()
 
     return {
@@ -32,13 +31,13 @@ class HomePage extends React.Component {
     }
   }
 
-  render() {
+  render(){
     return(
       <MainLayout mainLayout={this.props.mainLayout}>
-        <HomePageContent />
+
       </MainLayout>
     )
   }
 }
 
-export default HomePage;
+export default department
