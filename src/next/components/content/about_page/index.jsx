@@ -6,10 +6,10 @@ class AboutPageContent extends React.Component {
 		return(
 			<div style={{height: '100%', color:'#5d5d5d'}}>
 				<h1>
-					About CET
+					{this.props.aboutContent.heading}
 				</h1>
 				<h3 style={{paddingBottom:'1%'}}>
-					A place for learning, discovery, innovation, expression and discourse
+					{this.props.aboutContent.description}
 				</h3>
 				<Container fluid={true}>
 					<Row>
@@ -17,7 +17,7 @@ class AboutPageContent extends React.Component {
 						<Col sm="8" style={{ borderRight:' 3px solid blue',margin : 10, background :'white'}}>
 							<p id="about-content">
 								<h3>The Beginning</h3>
-									{this.props.aboutData.about}
+									{this.props.aboutContent.beginning.content}
 						</p>
 						</Col>
 
@@ -26,7 +26,7 @@ class AboutPageContent extends React.Component {
 								<h3>Mission</h3>
 								<blockquote style={{ background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
 									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
-										National Level Excellence and International Visibility in every facet of Engineering Education.
+										{this.props.aboutContent.mission.content}
 									</p>
 								</blockquote>
 							</div>
@@ -34,7 +34,7 @@ class AboutPageContent extends React.Component {
 								<h3>Vision</h3>
 								<blockquote style={{background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
 									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
-										To facilitate Quality Engineering Education to Equip and Enrich Young Men and Women to Meet Global challenges in Development, Innovation and Application of Technology in the service of Humanity.
+										{this.props.aboutContent.vision.content}
 									</p>
 								</blockquote>
 							</div>
