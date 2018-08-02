@@ -6,6 +6,13 @@ import OfficesCard from '../../simple/administration/cards/offices_card'
 import RTICard from '../../simple/administration/cards/rti'
 
 class AdministrationPage extends React.Component {
+    getInitialProps() {
+        return {
+            governanceCard: {
+
+            }
+        }
+    }
     render() {
         return (
             <div>
@@ -14,30 +21,30 @@ class AdministrationPage extends React.Component {
                         <Grid item xs={12}>
                             <Grid container justify="center">
                                 <div id="heading">
-                                    Administration
-                             </div>
+                                    {this.props.administration.heading}
+                                </div>
                             </Grid>
                         </Grid>
 
                         <Grid item xs={12}>
                             <Grid container justify="center">
                                 <div id="subheading">
-                                    Governance
-                             </div>
+                                    {this.props.administration.governance.title}
+                                </div>
                             </Grid>
                         </Grid>
                         <Grid item xs={12}>
                             <Grid container justify="center">
                                 <div id="small-description">
-                                    College of Engineering Trivandrum is led by
-                                    the Principal, Deans and the College
-                                    Council.
-                             </div>
+                                    {this.props.administration.governance
+                                        .description}
+                                </div>
                             </Grid>
                         </Grid>
                         <Grid item xs={12}>
                             <Grid container justify="center">
-                                <PeopleCard />
+                                <PeopleCard links={this.props.administration
+                                    .governance.links}/>
                             </Grid>
                         </Grid>
 
@@ -45,36 +52,32 @@ class AdministrationPage extends React.Component {
                         <Grid item xs={12}>
                             <Grid container justify="center">
                                 <div id="subheading">
-                                    Administrative Offices
-                             </div>
+                                    {this.props.administration.offices.title}
+                                </div>
                             </Grid>
                         </Grid>
 
                         <Grid item xs={12}>
                             <Grid container>
                                 <div id="small-description">
-                                    College of Engineering Trivandrum's
-                                    administrative offices are essential to
-                                    supporting the operations and mission of the
-                                    college. They deal with a diverse range of
-                                    issues including human resources, financial
-                                    activities, research administration and
-                                    student affairs.
-                             </div>
+                                    {this.props.administration.offices
+                                        .description}
+                                </div>
                             </Grid>
                         </Grid>
 
                         <Grid item xs={12}>
                             <Grid container justify="center">
-                                <OfficesCard />
+                                <PeopleCard links={this.props.administration
+                                    .offices.links}/>
                             </Grid>
                         </Grid>
 
                         <Grid item xs={12}>
                             <Grid container justify="center">
                                 <div id="subheading">
-                                    Right to Information
-                             </div>
+                                    {this.props.administration.rti.title}
+                                </div>
                             </Grid>
                         </Grid>
 
@@ -87,7 +90,8 @@ class AdministrationPage extends React.Component {
 
                         <Grid item xs={12}>
                             <Grid container justify="center">
-                                <RTICard />
+                            <PeopleCard links={this.props.administration
+                                    .rti.links}/>
                             </Grid>
                         </Grid>
 

@@ -39,7 +39,6 @@ class AboutPage extends React.Component {
         vision: data.about.data.vision
       }
     }
-
   }
   render() {
     return(

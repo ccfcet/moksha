@@ -40,36 +40,25 @@ function SimpleCard(props) {
       <Card className={classes.card}>
         <CardContent>
           <div id="card-content-container">
-            <div className={classes.listitem}>
-              <div className="list-item-link">
-                <a href="/" >College Office</a>
-              </div>
-            </div>
+            {this.props.links.map(link => {
+              return (
+                <div>
+                  <div className={classes.listitem}>
+                    <div className="list-item-link">
+                      <a href={link.url} >{link.title}</a>
+                    </div>
+                  </div>
+                  <Divider />
+                </div>
+              )
+            })}
 
-            <Divider />
-            <div className={classes.listitem}>
-              <div className="list-item-link">
-                <a href="/" >Hostel Office</a>
-              </div>
-            </div>
-            <Divider />
-            <div className={classes.listitem}>
-              <div className="list-item-link">
-                <a href="/" >Technical Documentation Center</a>
-              </div>
-            </div>
-            <Divider />
-            <div className={classes.listitem}>
-              <div className="list-item-link">
-                <a href="/" >Office of the Evening Courses</a>
-              </div>
-            </div>
           </div>
 
         </CardContent>
       </Card>
       <style jsx>
-      {`
+        {`
       #card-content-container {
         width: 50%;
         margin-left: 25%;
