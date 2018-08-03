@@ -15,7 +15,7 @@
   - [ ] Clubs
   - [ ] Separate Entity for Facilities
   - [x] About College
-- [x] Admininstration
+- [x] Administration
   - [ ] Entity People Association Entity Roles Association
 - [ ] Karma Version API
 - [ ] Search API
