@@ -14,8 +14,8 @@
   - [ ] College Union
   - [ ] Clubs
   - [ ] Separate Entity for Facilities
-  - [ ] About College
-- [ ] Admininstration
+  - [x] About College
+- [x] Admininstration
   - [ ] Entity People Association Entity Roles Association
 - [ ] Karma Version API
 - [ ] Search API
