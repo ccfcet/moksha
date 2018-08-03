@@ -10,7 +10,8 @@ class MenuBar extends React.Component {
       <div>
         <ResponsiveMenu
           className="menu-tag"
-          menuOpenButton={<div id="menu-open-text">
+          menuOpenButton={
+          <div id="menu-open-text">
             Menu
           </div>}
           menuCloseButton={<div id="menu-close-text">Close</div>}

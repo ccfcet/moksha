@@ -1,12 +1,12 @@
 # API Connection Checklist
 - [x] College name
 - [x] Menu
-- [ ] Events
-- [ ] News
-- [ ] Academics
+- [ ] Events -- API updation in progress
+- [ ] News -- API updation in progress
+- [ ] Academics -- API updation in progress
   - [ ] Streams
   - [ ] Courses
-- [ ] EntityInformation - College
+- [ ] EntityInformation - College -- API updation in progress
   - [ ] Admissions
   - [ ] Departments
   - [ ] Research
@@ -16,6 +16,6 @@
   - [ ] Separate Entity for Facilities
   - [x] About College
 - [x] Administration
-  - [ ] Entity People Association Entity Roles Association
+  - [x] Entity People Association Entity Roles Association
 - [ ] Karma Version API
 - [ ] Search API
