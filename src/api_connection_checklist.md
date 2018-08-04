@@ -2,11 +2,11 @@
 - [x] College name
 - [x] Menu
 - [ ] Events -- API updation in progress
-- [ ] News -- API updation in progress
-- [ ] Academics -- API updation in progress
+- [ ] News -- API updation completed
+- [ ] Academics -- API updation completed
   - [ ] Streams
   - [ ] Courses
-- [ ] EntityInformation - College -- API updation in progress
+- [ ] EntityInformation - College -- API updation completed
   - [ ] Admissions
   - [ ] Departments
   - [ ] Research
