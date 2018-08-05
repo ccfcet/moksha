@@ -8,7 +8,11 @@ routes
     pattern: '/academics/programmes',
     page: 'academics/programmes',
   })
-  .add({ name: 'academics/admissions', pattern: '/academics/admissions', page: 'academics/admissions' })
+  .add({
+    name: 'academics/admissions',
+    pattern: '/academics/admissions',
+    page: 'academics/admissions',
+  })
   .add({ name: 'news', pattern: '/news', page: 'news' })
   .add({ name: 'error', pattern: '/:error', page: 'page' });
 // .add({ name: 'page_sub', pattern: '/:main/:sub', page: 'page_main_sub' });

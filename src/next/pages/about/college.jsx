@@ -10,15 +10,15 @@ class AboutPage extends React.Component {
   static async getInitialProps() {
     let data = {}
     let res;
-    
-    res = await fetch(config.apiLocation + '/public/information/about/cet')
-    data['about'] = await res.json(); 
 
     res = await fetch(config.apiLocation + '/public/information/entity_name/cet')
     data['collegeName'] = await res.json()
 
     res = await fetch(config.apiLocation + '/public/menu/cet/1')
     data['menu'] = await res.json()
+
+    res = await fetch(config.apiLocation + '/public/information/about/cet')
+    data['about'] = await res.json();
 
     return {
       mainLayout: {
@@ -40,6 +40,7 @@ class AboutPage extends React.Component {
       }
     }
   }
+  
   render() {
     return(
       <MainLayout mainLayout={this.props.mainLayout}>

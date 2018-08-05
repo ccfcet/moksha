@@ -19,17 +19,17 @@ const content = [
     description:
     'The 16th International Conference on Control, Communication and Computing (IC4 2018) offers a platform for researchers, practitioners, manufacturers and academicians to discuss the ongoing research  across the world  and help exchange  ideas in addressing work related issues faced by human beings in all facets of daily activities.',
     button: 'Discover',
-    image: './static/images/hwwe_2018.jpg',
+    image: './static/images/quantum-768x411.jpg',
   },
   {
     id: 3,
     title: 'AJWTF 7',
     description:
-    'The 7th Asian Joint Workshop on Thermophysics and Fluid Science' + 
-    ' organised by Department of Mechanical Engineering, College of '+ 
+    'The 7th Asian Joint Workshop on Thermophysics and Fluid Science' +
+    ' organised by Department of Mechanical Engineering, College of '+
     'Engineering Trivandrum',
     button: 'Discover',
-    image: './static/images/hwwe_2018.jpg',
+    image: './static/images/splash_(fluid_mechanics).jpg',
   }
 ];
 
@@ -51,16 +51,20 @@ class ReactAnimatedSlider extends React.Component {
                       key={article.id}
                       className="slider-content"
                       style={{
-                        background: `url('${article.image}') no-repeat center center`
-                        // background: '#0000e7',
+                        background: `url('${article.image}') no-repeat center center`,
+                        backgroundSize: `cover`,
                         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0000e8+0,0000ff+100 */
-                        // background: 'rgb(0,0,232)', /* Old browsers */
+                        // background: 'rgb(0,0,232, 0.2)', /* Old browsers */
                         // background: '-moz-linear-gradient(top, rgba(0,0,232,1) 0%, rgba(0,0,255,1) 100%)', /* FF3.6-15 */
                         // background: '-webkit-linear-gradient(top, rgba(0,0,232,1) 0%,rgba(0,0,255,1) 100%)', /* Chrome10-25,Safari5.1-6 */
                         // background: 'linear-gradient(to bottom, rgba(0,0,232,1) 0%,rgba(0,0,255,1) 100%)', /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                         // filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#0000e8\', endColorstr=\'#0000ff\',GradientType=0 )', /* IE6-9 */
                       }}
                       >
+                        <div style={{
+                          background: `rgba(1,1,1,0.8)`,
+                          height: `100%`
+                        }}>
                         <div className="inner">
                           <h1>
                             {article.title}
@@ -72,6 +76,7 @@ class ReactAnimatedSlider extends React.Component {
                             {article.button}
                           </button></a>
                         </div>
+                      </div>
                       </div>
                     ))}
                   </Slider>
