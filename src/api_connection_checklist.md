@@ -2,7 +2,7 @@
 - [x] College name
 - [x] Menu
 - [ ] Events -- API updation in progress
-- [ ] News -- API updation completed
+- [x] News -- API updation completed
 - [ ] Academics -- API updation completed
   - [ ] Streams
   - [ ] Courses

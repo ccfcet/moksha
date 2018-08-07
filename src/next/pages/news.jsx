@@ -12,11 +12,15 @@ class HomePage extends React.Component {
     let data = {}
     let res;
 
-    res = await fetch(config.apiLocation + '/public/information/entity_name/cet')
+    res = await fetch(config.apiLocation + '/public/information/entity_name/' +
+    config.slug)
     data['collegeName'] = await res.json()
 
-    res = await fetch(config.apiLocation + '/public/menu/cet/1')
+    res = await fetch(config.apiLocation + '/public/menu/' + config.slug + '/1')
     data['menu'] = await res.json()
+
+    res = await fetch(config.apiLocation + '/private/news/' + config.slug)
+    data['news'] = await res.json()
 
     return {
       mainLayout: {
@@ -28,6 +32,9 @@ class HomePage extends React.Component {
             menu: data.menu
           }
         }
+      },
+      newsContent: {
+        news: data.news
       }
     }
   }
@@ -35,7 +42,7 @@ class HomePage extends React.Component {
   render() {
     return(
       <MainLayout mainLayout={this.props.mainLayout}>
-        <NewsContent />
+        <NewsContent newsData={this.props.newsContent}/>
       </MainLayout>
         )
       }

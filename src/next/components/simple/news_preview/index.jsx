@@ -1,11 +1,9 @@
   import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -47,23 +45,37 @@ class NewsPreview extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      articlesPreview: [{
-        img: "preview",
-        heading: "Engaging with Portuguese Design",
-        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      },
-      {
-        img: "preview",
-        heading: "Engaging with Portuguese Design",
-        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      },
-      {
-        img: "preview",
-        heading: "Engaging with Portuguese Design",
-        text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      }],
+      // articlesPreview: [{
+      //   img: "preview",
+      //   heading: "Engaging with Portuguese Design",
+      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      // },
+      // {
+      //   img: "preview",
+      //   heading: "Engaging with Portuguese Design",
+      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      // },
+      // {
+      //   img: "preview",
+      //   heading: "Engaging with Portuguese Design",
+      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
+      // }],
+      articlesPreview: []
     }
   }
+  componentDidMount() {
+    console.log(this.props.newsData.news.entity_news)
+    this.props.newsData.news.entity_news.map( news => {
+      const currentNews = this.state.articlesPreview;
+      const newsItem = {}
+      newsItem.img = "preview";
+      newsItem.heading = this.state.articlesPreview. title;
+      newsItem.text = this.state.articlesPreview.text;
+      currentNews.push(news);
+      this.setState({articlesPreview: currentNews});
+    })
+  }
+  
   render () {
     const { classes } = this.props;
     const { articlesPreview } = this.state;
@@ -71,17 +83,12 @@ class NewsPreview extends React.Component {
       <div>
         <Card className={classes.card} square={true}>
           <CardContent className={classes.cardContent}>
-            {/* <Typography className={classes.articleHeading} variant="headline" component="h1">
-              News Highlights
-            </Typography>
-            <Divider /> */}
-
             {
             articlesPreview.map( key => (
               <div>
                 <div className={classes.articleBase}>
                   <div className={classes.articleImg}>
-                    <img src={`/static/${key.img}.jpg`} alt={key.heading} title={key.heading} width="100%"/>
+                    <img src={`/static/preview.jpg`} alt={key.heading} title={key.heading} width="100%"/>
                   </div>
                   <div className={classes.articleContent}>
                     <Typography gutterBottom variant="headline">
