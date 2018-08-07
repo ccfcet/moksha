@@ -17,7 +17,7 @@ class AboutPageContent extends React.Component {
 						<Col sm="8" style={{ borderRight:' 3px solid blue',margin : 10, background :'white'}}>
 							<p id="about-content">
 								<h3>The Beginning</h3>
-									{this.props.aboutContent.beginning.content}
+									{this.props.aboutContent.beginning}
 						</p>
 						</Col>
 
@@ -26,7 +26,7 @@ class AboutPageContent extends React.Component {
 								<h3>Mission</h3>
 								<blockquote style={{ background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
 									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
-										{this.props.aboutContent.mission.content}
+										{this.props.aboutContent.mission}
 									</p>
 								</blockquote>
 							</div>
@@ -34,7 +34,7 @@ class AboutPageContent extends React.Component {
 								<h3>Vision</h3>
 								<blockquote style={{background:'url("../../../static/images/oq.png") top left no-repeat', paddingLeft:55}}>
 									<p style={{paddingRight:35, lineHeight:2, background:'url("../../../static/images/cq.png") bottom right no-repeat', paddingBottom:15, fontStyle:'italic', fontSize:22}}>
-										{this.props.aboutContent.vision.content}
+										{this.props.aboutContent.vision}
 									</p>
 								</blockquote>
 							</div>

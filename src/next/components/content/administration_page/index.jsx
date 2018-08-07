@@ -2,8 +2,6 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 import PeopleCard from '../../simple/administration/cards/people_card_1'
-// import OfficesCard from '../../simple/administration/cards/offices_card'
-// import RTICard from '../../simple/administration/cards/rti'
 
 class AdministrationPage extends React.Component {
     render() {

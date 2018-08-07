@@ -45,21 +45,6 @@ class NewsPreview extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // articlesPreview: [{
-      //   img: "preview",
-      //   heading: "Engaging with Portuguese Design",
-      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      // },
-      // {
-      //   img: "preview",
-      //   heading: "Engaging with Portuguese Design",
-      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      // },
-      // {
-      //   img: "preview",
-      //   heading: "Engaging with Portuguese Design",
-      //   text: "A fascinating exhibition at RISD showcases contemporary work using traditional materials and techniques and kicks off a multiyear collaboration between RISD and several organizations in Portugal.",
-      // }],
       articlesPreview: []
     }
   }
