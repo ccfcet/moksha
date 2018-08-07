@@ -64,7 +64,6 @@ class NewsPreview extends React.Component {
     }
   }
   componentDidMount() {
-    console.log(this.props.newsData.news.entity_news)
     this.props.newsData.news.entity_news.map( news => {
       const currentNews = this.state.articlesPreview;
       const newsItem = {}

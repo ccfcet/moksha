@@ -34,43 +34,27 @@ const styles = {
 
 function SimpleCard(props) {
   const { classes } = props;
-  const bull = <span className={classes.bullet}>•</span>;
-
+  const { links } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardContent>
           <div id="card-content-container">
-            <div className={classes.listitem}>
-              <Typography variant="subheading" component="h2">
-                <a href="/" >Office of the Principal</a>
-              </Typography>
-            </div>
-
-            <Divider />
-            <div className={classes.listitem}>
-              <Typography variant="subheading" component="h2">
-                <a href="/" >Office of the UG Dean</a>
-              </Typography>
-            </div>
-            <Divider />
-            <div className={classes.listitem}>
-              <Typography variant="subheading" component="h2">
-                <a href="/" >Office of the PG Dean</a>
-              </Typography>
-            </div>
-            <Divider />
-            <div className={classes.listitem}>
-              <Typography variant="subheading" component="h2">
-                <a href="/" >Office of the Research Dean</a>
-              </Typography>
-            </div>
+            links.map(link => (
+              <div>
+                <div className={classes.listitem}>
+                  <Typography variant="subheading" component="h2">
+                    <a href={link.url} >{link.title}</a>
+                  </Typography>
+                </div>
+                <Divider />
+              </div>
+            ))
           </div>
-
         </CardContent>
       </Card>
       <style jsx>
-      {`
+        {`
       #card-content-container {
         width: 50%;
         margin-left: 25%;
