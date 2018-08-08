@@ -4,7 +4,8 @@ import ActionBar from '../../derived/action_bar';
 import MainContainer from '../../simple/main_container';
 import TopBar from '../top_bar';
 
-const actions = ['Login', 'Settings'];
+// const actions = ['Login', 'Settings'];
+const actions = [];
 
 class MainLayout extends React.Component {
   render() {

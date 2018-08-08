@@ -40,7 +40,7 @@ class AboutPage extends React.Component {
       }
     }
   }
-  
+
   render() {
     return(
       <MainLayout mainLayout={this.props.mainLayout}>

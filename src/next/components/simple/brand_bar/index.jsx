@@ -7,9 +7,11 @@ class BrandBar extends React.Component {
       <div id="brand-bar">
         <div id="brand-bar-element">
           <Link href="/">
-          <h1 id="college-name">
-            {this.props.brandBar.collegeName}
-          </h1>
+          <a style={{textDecoration: 'none'}}>
+            <h1 id="college-name">
+              {this.props.brandBar.collegeName}
+            </h1>
+          </a>
         </Link>
       </div>
       <style jsx>

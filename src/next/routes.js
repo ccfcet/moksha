@@ -2,7 +2,7 @@ const routes = require('next-routes')();
 
 routes
   .add({ name: 'home_page', pattern: '/', page: 'index' })
-  .add({ name: 'about', pattern: '/about/college', page: 'about/college' })
+  .add({ name: 'about', pattern: '/about', page: 'about/college' })
   .add({
     name: 'administration',
     pattern: '/about/administration',
@@ -12,6 +12,11 @@ routes
     name: 'academics/programmes',
     pattern: '/academics/programmes',
     page: 'academics/programmes',
+  })
+  .add({
+    name: 'academics/programmes/B.Tech',
+    pattern: '/academics/programmes/B.Tech',
+    page: 'academics/programmes/B.Tech',
   })
   .add({
     name: 'academics/admissions',

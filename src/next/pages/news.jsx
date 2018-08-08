@@ -7,7 +7,7 @@ import MainLayout from '../components/derived/main_layout';
 import config from '../config.json';
 
 class HomePage extends React.Component {
-  
+
   static async getInitialProps() {
     let data = {}
     let res;
@@ -19,7 +19,7 @@ class HomePage extends React.Component {
     res = await fetch(config.apiLocation + '/public/menu/' + config.slug + '/1')
     data['menu'] = await res.json()
 
-    res = await fetch(config.apiLocation + '/private/news/' + config.slug)
+    res = await fetch(config.apiLocation + '/public/news/' + config.slug)
     data['news'] = await res.json()
 
     return {
